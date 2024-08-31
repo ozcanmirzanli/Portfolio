@@ -1,6 +1,5 @@
 * {
   font-family: Poppins;
-  max-width: 1440px;
 }
 
 .header {
@@ -9,14 +8,21 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 38px;
+  padding-bottom: 38px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
 
   h2 {
     color: white;
     font-size: 32px;
+    margin-left: 100px;
   }
 }
 
 .header-links {
+  margin-right: 100px;
+
   a {
     font-size: 23px;
     font-weight: 400;
@@ -24,5 +30,9 @@
     color: #ffffff;
     text-decoration: none;
     margin-right: 30px;
+
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 }
