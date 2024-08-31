@@ -1,6 +1,14 @@
 *,
 body {
   margin: 0;
+  font-family: poppins;
+
+  h1 {
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+    line-height: 108px;
+  }
 }
 
 :root {
