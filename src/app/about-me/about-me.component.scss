@@ -1,10 +1,9 @@
 .about-me-container {
   height: 100vh;
-  background: #141d2f;
+  background: var(--background-color);
 }
 
 .about-me-text {
-  margin-top: 50px;
   margin-left: 100px;
   z-index: 3;
   position: relative;

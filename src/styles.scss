@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: poppins;
+  scroll-behavior: smooth;
 
   h1 {
     color: white;
@@ -14,4 +15,5 @@ body {
 :root {
   --primary-color: #70e61c;
   --secondary-color: #9747ff;
+  --background-color: #141d2f;
 }
