@@ -1,8 +1,6 @@
 .header {
   background-color: var(--background-color);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
   padding-top: 38px;
   padding-bottom: 38px;
   position: fixed;
@@ -31,4 +29,11 @@
       color: var(--primary-color);
     }
   }
+}
+
+.header-content {
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
