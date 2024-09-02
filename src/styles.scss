@@ -10,6 +10,44 @@ body {
     font-weight: 700;
     line-height: 108px;
   }
+
+  p {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+
+    .purple-border {
+      width: 100px;
+      border-bottom: 4px solid #9747ff;
+      border-radius: 10px;
+    }
+  }
+
+  .green-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px 15px 30px;
+    border-radius: 10px;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    cursor: pointer;
+    transition: transform 0.3s ease-out;
+    margin-top: 44px;
+    margin-right: 50px;
+    z-index: 9;
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: var(--secondary-color);
+    }
+  }
+}
+
+body {
+  background-color: var(--background-color);
 }
 
 :root {

@@ -1,11 +1,16 @@
 .my-skills-container {
   height: 100vh;
-  background-color: var(--background-color);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .my-skills-logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   width: 664px;
   height: 404px;
@@ -16,6 +21,8 @@
   display: flex;
   flex-direction: row;
   width: 100%;
+  align-items: center;
+  justify-content: flex-start;
 
   span {
     color: white;
@@ -32,4 +39,51 @@
   flex-direction: column;
   align-items: center;
   margin-right: 105px;
+}
+
+h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+
+  span {
+    color: var(--primary-secondary);
+  }
+}
+
+.my-skills-text {
+  width: 571px;
+  height: 400px;
+}
+
+.my-skills-info {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  p {
+    text-align: right;
+  }
+}
+
+.my-skills-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.purple-border {
+  width: 100px;
+  border-bottom: 4px solid #9747ff;
+  border-radius: 10px;
+  margin-left: 32px;
+}
+
+.green-btn {
+  margin-top: 40px;
 }

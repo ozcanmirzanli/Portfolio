@@ -1,6 +1,8 @@
 .main-page-container {
-  background-color: var(--background-color);
   height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .profile-shadow {
@@ -40,32 +42,12 @@
   flex-direction: row;
   align-items: center;
   height: 100%;
+  position: relative;
 }
 
 .center-btn {
   display: flex;
   justify-content: center;
-}
-
-.green-btn {
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  padding: 15px 30px 15px 30px;
-  border-radius: 10px;
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 27.6px;
-  cursor: pointer;
-  transition: transform 0.3s ease-out;
-  margin-top: 44px;
-  margin-right: 50px;
-  z-index: 9;
-
-  &:hover {
-    transform: scale(1.2);
-    background-color: var(--secondary-color);
-  }
 }
 
 .background {
@@ -103,11 +85,14 @@
 .contact-options {
   display: flex;
   flex-direction: row;
-  width: 100%;
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
 }
 
-.purple-line {
+.purple-border {
   width: 100px;
   border-bottom: 4px solid #9747ff;
   border-radius: 10px;
@@ -127,7 +112,7 @@
   height: 700px;
   position: absolute;
   top: 120px;
-  left: 120px;
+  left: 150px;
 }
 
 .scroll-text {
