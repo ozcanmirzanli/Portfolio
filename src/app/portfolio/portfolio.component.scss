@@ -1,4 +1,7 @@
-h1 {
+.portfolio-container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .portfolio-title {
@@ -25,4 +28,53 @@ h1 {
 
 p {
   text-align: center;
+}
+
+.project-section {
+  margin-top: 32px;
+  margin-left: 136px;
+
+  img {
+    width: 450px;
+  }
+}
+
+.single-project {
+  display: flex;
+  height: 339px;
+
+  p {
+    text-align: left;
+  }
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38.4px;
+  text-align: left;
+}
+
+h3 {
+  color: var(--primary-color);
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 27.6px;
+  text-align: left;
+}
+
+.project-text {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-end {
+  align-items: flex-end;
 }

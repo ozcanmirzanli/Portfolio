@@ -8,4 +8,23 @@
     Explore a selection of my work here - Interact with projects to see my
     skills in action.
   </p>
+  <div class="project-section">
+    <div
+      class="single-project"
+      [ngClass]="project.reverseClass"
+      *ngFor="let project of projects"
+    >
+      <div class="project-img">
+        <img [src]="project.image" [alt]="project.imageAlt" />
+      </div>
+      <div
+        class="project-text"
+        [ngClass]="{ 'flex-end': project.reverseClass === 'row-reverse' }"
+      >
+        <h2>{{ project.title }}</h2>
+        <h3>{{ project.technologies }}</h3>
+        <p>{{ project.description }}</p>
+      </div>
+    </div>
+  </div>
 </div>
