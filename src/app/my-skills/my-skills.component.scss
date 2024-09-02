@@ -2,10 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: 0 auto;
   width: 100%;
   padding-top: 180px;
+}
+
+.my-skills {
+  display: flex;
 }
 
 .my-skills-logos {
@@ -15,6 +19,7 @@
   width: 664px;
   height: 404px;
   margin-left: 100px;
+  margin-right: 105px;
 }
 
 .skill-row {

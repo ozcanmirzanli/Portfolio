@@ -1,12 +1,11 @@
 .header {
   background-color: var(--background-color);
-
   padding-top: 38px;
   padding-bottom: 38px;
   position: fixed;
   width: 100%;
   z-index: 99;
-
+  left: 0;
   h2 {
     color: white;
     font-size: 32px;
@@ -32,8 +31,9 @@
 }
 
 .header-content {
-  max-width: 1920px;
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 0 auto;
 }

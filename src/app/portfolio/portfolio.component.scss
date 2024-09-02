@@ -1,0 +1,28 @@
+h1 {
+}
+
+.portfolio-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 180px;
+  margin-bottom: 40px;
+}
+
+.purple-border {
+  width: 100px;
+  border-bottom: 4px solid #9747ff;
+  border-radius: 10px;
+  margin-left: 32px;
+}
+
+.purple-border-big {
+  width: 507px;
+  border-bottom: 4px solid #9747ff;
+  border-radius: 10px;
+  margin-left: 32px;
+}
+
+p {
+  text-align: center;
+}
