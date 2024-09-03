@@ -15,7 +15,14 @@
       *ngFor="let project of projects"
     >
       <div class="project-img">
-        <img [src]="project.image" [alt]="project.imageAlt" />
+        <img
+          [ngStyle]="{
+            'margin-left':
+              project.reverseClass === 'row-reverse' ? '100px' : '0'
+          }"
+          [src]="project.image"
+          [alt]="project.imageAlt"
+        />
       </div>
       <div
         class="project-text"
