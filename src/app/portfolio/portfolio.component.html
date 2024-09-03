@@ -24,6 +24,14 @@
         <h2>{{ project.title }}</h2>
         <h3>{{ project.technologies }}</h3>
         <p>{{ project.description }}</p>
+        <div class="buttons-container">
+          <a [href]="project.liveLink">
+            <button class="designed-btn purple-btn">Live test</button>
+          </a>
+          <a [href]="project.link">
+            <button class="designed-btn empty-green-btn">Github</button>
+          </a>
+        </div>
       </div>
     </div>
   </div>

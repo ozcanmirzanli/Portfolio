@@ -36,6 +36,7 @@ p {
 
   img {
     width: 450px;
+    margin-right: 100px;
   }
 }
 
@@ -77,4 +78,21 @@ h3 {
 
 .flex-end {
   align-items: flex-end;
+}
+
+.purple-btn {
+  background-color: var(--secondary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+.empty-green-btn {
+  background-color: var(--background-color);
+  border: 1px solid var(--primary-color);
+
+  &:hover {
+    background-color: var(--primary-color);
+  }
 }

@@ -18,6 +18,8 @@ export class PortfolioComponent {
       image: 'assets/img/join.png',
       imageAlt: 'join',
       reverseClass: '',
+      link: 'https://github.com/ozcanmirzanli/Join',
+      liveLink: 'https://join.ozcanmirdev.com/',
     },
     {
       title: 'El Pollo Loco',
@@ -27,6 +29,8 @@ export class PortfolioComponent {
       image: 'assets/img/polloloco.png',
       imageAlt: 'polloloco',
       reverseClass: 'row-reverse',
+      link: 'https://github.com/ozcanmirzanli/El-Pollo-Loco',
+      liveLink: 'https://elpolloloco.ozcanmirdev.com/',
     },
     {
       title: 'Pokédex',
@@ -36,6 +40,8 @@ export class PortfolioComponent {
       image: 'assets/img/pokedex.png',
       imageAlt: 'pokedex',
       reverseClass: '',
+      link: 'https://github.com/ozcanmirzanli/Pokedex',
+      liveLink: '',
     },
   ];
 }

@@ -24,8 +24,7 @@ body {
     }
   }
 
-  .green-btn {
-    background-color: var(--primary-color);
+  .designed-btn {
     color: white;
     border: none;
     padding: 15px 30px 15px 30px;
@@ -38,11 +37,6 @@ body {
     margin-top: 44px;
     margin-right: 50px;
     z-index: 9;
-
-    &:hover {
-      transform: scale(1.2);
-      background-color: var(--secondary-color);
-    }
   }
 }
 

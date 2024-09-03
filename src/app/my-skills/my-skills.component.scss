@@ -39,6 +39,15 @@
   }
 }
 
+.green-btn {
+  background-color: var(--primary-color);
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--secondary-color);
+  }
+}
+
 .purple-text {
   color: var(--secondary-color) !important;
 }

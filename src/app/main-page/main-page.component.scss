@@ -85,6 +85,15 @@
   }
 }
 
+.green-btn {
+  background-color: var(--primary-color);
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: var(--secondary-color);
+  }
+}
+
 .contact-options {
   display: flex;
   flex-direction: row;
