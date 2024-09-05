@@ -87,6 +87,8 @@
 
 .green-btn {
   background-color: var(--primary-color);
+  z-index: 99;
+  position: relative;
 
   &:hover {
     transform: scale(1.2);

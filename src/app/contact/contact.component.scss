@@ -58,6 +58,10 @@ textarea {
 textarea {
   height: 202px;
   padding-top: 20px;
+
+  &:focus {
+    border: 1px solid black;
+  }
 }
 
 h2 {
@@ -91,4 +95,19 @@ span {
 
 .purple {
   color: var(--secondary-color);
+}
+
+.privacy-policy {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  img {
+    cursor: pointer;
+    position: relative;
+    transition: filter 0.1s ease;
+    &:hover {
+      filter: brightness(10);
+    }
+  }
 }

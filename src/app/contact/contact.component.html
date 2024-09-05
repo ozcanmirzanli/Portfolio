@@ -12,21 +12,57 @@
       </p>
       <p>Need a Frontend developer? <b>Contact me!</b></p>
     </div>
-    <div class="input-section">
-      <input type="text" placeholder="Your name" required />
-      <input type="text" placeholder="Your email" required />
-      <textarea placeholder="Your message" id="message" required></textarea>
+    <form
+      (ngSubmit)="onSubmit(contactForm)"
+      #contactForm="ngForm"
+      class="input-section"
+    >
+      <input
+        [(ngModel)]="contactData.name"
+        type="text"
+        name="name"
+        placeholder="Your name"
+        required
+      />
+      <input
+        [(ngModel)]="contactData.email"
+        type="email"
+        name="email"
+        placeholder="Your email"
+        required
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      />
+      <textarea
+        #message="ngModel"
+        [(ngModel)]="contactData.message"
+        placeholder="Your message"
+        id="message"
+        name="message"
+        minlength="4"
+        required
+      ></textarea>
+      @if (!message.valid && message.touched ) {
+      <span>Please enter a message</span>
+      }
       <div class="privacy-policy">
+        <div class="check-box">
+          <img
+            [src]="checkboxImageSrc"
+            (click)="checkBoxToggle()"
+            alt="Checkbox"
+          />
+        </div>
+
         <span
           >I've read the <span class="purple">privacy policy</span> and agree to
           the processing of my data as outlined.</span
         >
       </div>
       <div class="button-container">
-        <button class="designed-btn gray-btn" type="submit">
+        <button class="designed-btn gray-btn" type="submit" value="Submit">
           Send message :)
         </button>
       </div>
-    </div>
+    </form>
   </div>
 </div>
