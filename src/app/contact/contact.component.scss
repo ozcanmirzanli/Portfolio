@@ -58,10 +58,14 @@ textarea {
 textarea {
   height: 202px;
   padding-top: 20px;
+}
 
-  &:focus {
-    border: 1px solid black;
-  }
+.valid-field {
+  border: 1px solid #70e61c;
+}
+
+.invalid-field {
+  border: 1px solid red;
 }
 
 h2 {
@@ -84,6 +88,10 @@ p {
 
 .gray-btn {
   background-color: #b6b6b6;
+}
+
+.green-btn {
+  background-color: #70e61c;
 }
 
 span {
@@ -109,5 +117,15 @@ span {
     &:hover {
       filter: brightness(10);
     }
+  }
+}
+
+.required-container {
+  position: relative;
+  bottom: 25px;
+
+  span {
+    position: absolute;
+    color: red;
   }
 }
