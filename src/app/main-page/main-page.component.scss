@@ -94,6 +94,10 @@
     transform: scale(1.2);
     background-color: var(--secondary-color);
   }
+
+  &:active {
+    background-color: var(--primary-color);
+  }
 }
 
 .contact-options {

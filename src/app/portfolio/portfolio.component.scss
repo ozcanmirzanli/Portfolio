@@ -89,6 +89,10 @@ h3 {
   &:hover {
     background-color: var(--primary-color);
   }
+
+  &:active {
+    background-color: var(--secondary-color);
+  }
 }
 
 .empty-green-btn {
@@ -99,5 +103,9 @@ h3 {
 
   &:hover {
     background-color: var(--primary-color);
+  }
+
+  &:active {
+    background-color: var(--secondary-color);
   }
 }

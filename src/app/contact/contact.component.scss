@@ -134,4 +134,8 @@ span {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+
+  &:hover {
+    filter: hue-rotate(green);
+  }
 }
