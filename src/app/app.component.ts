@@ -6,6 +6,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
+
 import { ImpressumComponent } from './impressum/impressum.component';
 import { CommonModule } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
@@ -39,6 +40,7 @@ export class AppComponent {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.showMainContent = event.url !== '/impressum';
+        this.showMainContent = event.url !== '/privacy';
       }
     });
   }

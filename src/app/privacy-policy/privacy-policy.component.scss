@@ -1,0 +1,41 @@
+.main-container {
+  flex: 1; /* Makes this container expand to fill the remaining space */
+  display: flex;
+  flex-direction: column;
+}
+
+.privacy-container {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h2 {
+  color: white;
+  font-size: 30px;
+}
+
+h3 {
+  color: white;
+  font-size: 20px;
+}
+
+li {
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
