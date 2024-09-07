@@ -3,6 +3,8 @@ body {
   margin: 0;
   font-family: poppins;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 
   h1 {
     color: white;
@@ -42,10 +44,15 @@ body {
 
 body {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 :root {
   --primary-color: #70e61c;
   --secondary-color: #9747ff;
   --background-color: #141d2f;
+}
+
+app-porfolio {
+  margin-top: 100px;
 }

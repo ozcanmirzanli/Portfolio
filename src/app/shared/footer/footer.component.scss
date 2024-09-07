@@ -1,7 +1,7 @@
 .green-border {
   border-bottom: 4px solid var(--primary-color);
   width: 100%;
-  margin-top: 90px;
+  margin-top: 245px;
 }
 
 .footer-container {
@@ -9,6 +9,9 @@
   justify-content: space-evenly;
   align-items: center;
   height: 291px;
+  background-color: var(--background-color);
+  width: 100%; /* Ensures it spans full width */
+  margin-top: auto; /* Makes sure it's at the bottom */
 }
 
 h2 {
