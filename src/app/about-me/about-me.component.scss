@@ -81,3 +81,40 @@
   border-bottom: 4px solid #70e61c;
   width: 267px;
 }
+
+@media (max-width: 1440px) {
+  .about-me-photo {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .green-border {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-me-photo {
+    img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+
+  .green-border {
+    width: 150px;
+  }
+}
+
+@media (max-width: 1145px) {
+  .about-me-photo,
+  .green-border {
+    display: none;
+  }
+
+  .about-me {
+    justify-content: center;
+  }
+}

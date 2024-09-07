@@ -10,6 +10,7 @@
 
 .my-skills {
   display: flex;
+  width: 100%;
 }
 
 .my-skills-logos {
@@ -133,5 +134,26 @@ h3 {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 1440px) {
+  .my-skills-logos {
+    width: 500px;
+    margin-right: 10%;
+  }
+
+  .single-skill {
+    margin-right: 15%;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .single-skill {
+    margin-right: 12%;
   }
 }

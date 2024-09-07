@@ -124,7 +124,9 @@ span {
   img {
     cursor: pointer;
     position: relative;
+    margin-right: 10px;
     transition: filter 0.1s ease;
+
     &:hover {
       filter: brightness(10);
     }
@@ -136,7 +138,6 @@ span {
   align-items: center;
   flex-direction: row;
   width: 100%;
-  justify-content: space-evenly;
 }
 
 .required-container {
@@ -173,4 +174,34 @@ span {
   top: -400px;
   left: -600px;
   z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  input,
+  textarea {
+    width: 90%;
+  }
+
+  .purple-border-big {
+    width: 40%;
+  }
+
+  .contact-text {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .purple-border-big {
+    width: 30%;
+  }
+
+  input,
+  textarea {
+    width: 80%;
+  }
+
+  .contact-text {
+    margin-right: 5%;
+  }
 }

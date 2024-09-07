@@ -6,13 +6,6 @@ body {
   margin: 0;
   padding: 0;
 
-  h1 {
-    color: white;
-    font-size: 90px;
-    font-weight: 700;
-    line-height: 108px;
-  }
-
   p {
     color: white;
     font-size: 16px;
@@ -42,6 +35,13 @@ body {
   }
 }
 
+h1 {
+  color: white;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 108px;
+}
+
 body {
   background-color: var(--background-color);
   overflow-x: hidden;
@@ -55,4 +55,17 @@ body {
 
 app-porfolio {
   margin-top: 100px;
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 65px;
+    line-height: 73px;
+  }
+}
+
+@media (max-width: 1100px) {
+  h1 {
+    font-size: 60px;
+  }
 }

@@ -74,8 +74,13 @@ h3 {
   width: 513px;
 }
 
-.row-reverse {
-  flex-direction: row-reverse;
+.single-project.reverse {
+  flex-direction: row-reverse; /* Reverse the order */
+
+  img {
+    margin-left: 100px;
+    margin-right: 0;
+  }
 }
 
 .flex-end {
@@ -121,4 +126,27 @@ h3 {
   left: -300px;
   top: -350px;
   z-index: -1;
+}
+
+@media (max-width: 1440px) {
+  .purple-border-big {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-section {
+    margin-left: 5%;
+
+    img {
+      margin-right: 50px;
+    }
+
+    .single-project.reverse {
+      img {
+        margin-right: 0;
+        margin-left: 50px;
+      }
+    }
+  }
 }
