@@ -80,18 +80,29 @@ p {
   margin-bottom: 16px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .button-container {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
+.designed-btn {
+  background-color: #b6b6b6;
+  cursor: not-allowed;
+}
+
 .gray-btn {
   background-color: #b6b6b6;
+  cursor: not-allowed;
 }
 
 .green-btn {
   background-color: #70e61c;
+  cursor: pointer;
 }
 
 span {
@@ -107,8 +118,7 @@ span {
 
 .privacy-policy {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  flex-direction: column;
 
   img {
     cursor: pointer;
@@ -120,6 +130,14 @@ span {
   }
 }
 
+.check-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
 .required-container {
   position: relative;
   bottom: 25px;
@@ -128,6 +146,10 @@ span {
     position: absolute;
     color: red;
   }
+}
+
+.privacy-warning {
+  top: 10px;
 }
 
 .go-up-btn {

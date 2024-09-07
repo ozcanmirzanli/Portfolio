@@ -77,24 +77,31 @@
             (click)="checkBoxToggle()"
             alt="Checkbox"
           />
+          <span
+            >I've read the
+            <a [routerLink]="['/privacy']" href="#" (click)="scrollToTop()"
+              ><span class="purple">privacy policy </span></a
+            >and agree to the processing of my data as outlined.</span
+          >
         </div>
-
-        <span
-          >I've read the
-          <a [routerLink]="['/privacy']" href=""
-            ><span class="purple">privacy policy</span> </a
-          >and agree to the processing of my data as outlined.</span
+        <div
+          *ngIf="!isChecked && isCheckboxTouched"
+          class="required-container privacy-warning"
         >
+          <span>Please accept the privacy policy.</span>
+        </div>
       </div>
+
       <div class="button-container">
         <button
-          class="designed-btn"
+          class="designed-btn gray-btn"
           [ngClass]="{
-            'green-btn': contactForm.valid,
-            'gray-btn': !contactForm.valid
+            'green-btn': contactForm.valid && isChecked,
+            'gray-btn': !contactForm.valid && !isChecked
           }"
           type="submit"
           value="Submit"
+          [disabled]="!contactForm.valid || !isChecked"
         >
           Send message :)
         </button>

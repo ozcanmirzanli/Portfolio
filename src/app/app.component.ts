@@ -39,8 +39,8 @@ export class AppComponent {
   ngOnInit() {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.showMainContent = event.url !== '/impressum';
-        this.showMainContent = event.url !== '/privacy';
+        this.showMainContent =
+          event.url !== '/impressum' && event.url !== '/privacy';
       }
     });
   }

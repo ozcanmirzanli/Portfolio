@@ -21,6 +21,8 @@ export class ContactComponent {
   };
 
   mailTest = true;
+  isChecked = false;
+  isCheckboxTouched = false;
 
   post = {
     endPoint: 'https://ozcanmirdev.com/sendMail.php',
@@ -34,12 +36,21 @@ export class ContactComponent {
   };
 
   onSubmit(ngForm: NgForm) {
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    this.isCheckboxTouched = true;
+
+    if (
+      ngForm.submitted &&
+      ngForm.form.valid &&
+      !this.mailTest &&
+      this.isChecked
+    ) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.isChecked = false;
+            this.isCheckboxTouched = false;
           },
           error: (error) => {
             console.error(error);
@@ -51,12 +62,10 @@ export class ContactComponent {
     }
   }
 
-  // Variable to track checkbox state
-  isChecked = false;
-
   // Toggle function to change the checkbox state
   checkBoxToggle() {
     this.isChecked = !this.isChecked;
+    this.isCheckboxTouched = true;
   }
 
   // Get the image source based on the checked state
@@ -64,5 +73,9 @@ export class ContactComponent {
     return this.isChecked
       ? 'assets/img/checked.png'
       : 'assets/img/unchecked.png';
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }
