@@ -117,6 +117,16 @@ h3 {
   }
 }
 
+.shadow-container {
+  position: relative;
+}
+
+.green-shadow {
+  position: absolute;
+  left: -685px;
+  top: -275px;
+}
+
 @keyframes up-and-down {
   0% {
     transform: translateY(-20px);

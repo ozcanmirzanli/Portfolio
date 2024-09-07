@@ -109,3 +109,15 @@ h3 {
     background-color: var(--secondary-color);
   }
 }
+
+.shadow-container {
+  position: relative;
+}
+
+.purple-shadow-portfolio {
+  position: absolute;
+  transform: scale(2);
+  left: -300px;
+  top: -350px;
+  z-index: -1;
+}

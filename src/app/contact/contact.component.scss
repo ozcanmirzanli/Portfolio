@@ -161,3 +161,15 @@ span {
     filter: hue-rotate(green);
   }
 }
+
+.shadow-container {
+  position: relative;
+}
+
+.purple-shadow-footer {
+  position: absolute;
+  position: absolute;
+  top: -400px;
+  left: -600px;
+  z-index: -1;
+}
