@@ -6,6 +6,7 @@
   width: 100%;
   z-index: 99;
   left: 0;
+
   h2 {
     color: white;
     font-size: 42px;
@@ -40,4 +41,27 @@ a {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto;
+}
+
+.burger-menu-btn {
+  display: none !important;
+}
+
+@media (max-width: 1100px) {
+  .burger-menu-btn {
+    display: block !important;
+    img {
+      position: relative;
+      right: 50px;
+    }
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header {
+    padding-top: 23px;
+    padding-bottom: 23px;
+  }
 }

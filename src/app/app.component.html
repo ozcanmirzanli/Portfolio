@@ -1,4 +1,14 @@
+<app-burger-menu
+  [isMenuOpen]="isMenuOpen"
+  (closeMenu)="closeBurgerMenu()"
+></app-burger-menu>
+
 <ng-container *ngIf="showMainContent">
+  <app-header
+    [isScreenSmall]="isScreenSmall"
+    [isMenuOpen]="isMenuOpen"
+    (openMenu)="openBurgerMenu()"
+  ></app-header>
   <app-main-page></app-main-page>
   <app-about-me id="about-me"></app-about-me>
   <app-my-skills id="my-skills"></app-my-skills>

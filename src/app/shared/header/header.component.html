@@ -7,5 +7,13 @@
       <a href="#my-skills">Skills</a>
       <a href="#portfolio">Portfolio</a>
     </div>
+
+    <div
+      class="burger-menu-btn"
+      (click)="openBurgerMenu()"
+      *ngIf="isScreenSmall && !isMenuOpen"
+    >
+      <img src="assets/img/burger_menu_btn.png" alt="burger_menu_btn" />
+    </div>
   </div>
 </div>
