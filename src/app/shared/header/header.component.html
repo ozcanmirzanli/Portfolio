@@ -3,9 +3,13 @@
     <a href="#main-page"><h2>Özcan</h2></a>
 
     <div class="header-links">
-      <a href="#about-me">About me</a>
-      <a href="#my-skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
+      <a
+        *ngFor="let link of links"
+        [href]="link.href"
+        (click)="setActiveLink(link.href)"
+        [ngClass]="{ 'active-link': activeLink === link.href }"
+        >{{ link.text }}</a
+      >
     </div>
 
     <div

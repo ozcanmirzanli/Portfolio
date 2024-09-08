@@ -47,6 +47,10 @@ a {
   display: none !important;
 }
 
+.header-links a.active-link {
+  color: var(--primary-color);
+}
+
 @media (max-width: 1100px) {
   .burger-menu-btn {
     display: block !important;
