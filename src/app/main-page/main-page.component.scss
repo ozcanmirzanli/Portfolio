@@ -204,6 +204,10 @@
 }
 
 @media (max-width: 1100px) {
+  .title-container {
+    z-index: 9;
+  }
+
   .profile-container {
     flex-direction: column;
   }
@@ -224,5 +228,27 @@
   h2 {
     font-size: 40px;
     line-height: 42.6px;
+  }
+
+  .scroll-text {
+    display: none;
+  }
+
+  .contact-options {
+    span {
+      display: none;
+    }
+  }
+
+  .shadow-container {
+    margin-top: 30%;
+  }
+
+  .about-me-text {
+    margin-left: 0;
+  }
+
+  .green-btn {
+    margin-top: 0;
   }
 }

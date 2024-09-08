@@ -157,3 +157,10 @@ h3 {
     margin-right: 12%;
   }
 }
+
+@media (max-width: 1100px) {
+  .my-skills {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
