@@ -5,7 +5,11 @@
     <div class="header-links">
       <ul>
         <li *ngFor="let link of links">
-          <a [href]="link.href" routerLinkActive="active-link">
+          <a
+            [href]="link.href"
+            (click)="setActiveLink(link.href)"
+            [ngClass]="{ 'active-link': activeLink === link.href }"
+          >
             {{ link.text }}
           </a>
         </li>
