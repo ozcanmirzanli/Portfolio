@@ -1,19 +1,12 @@
-import {
-  Component,
-  EventEmitter,
-  HostListener,
-  Input,
-  Output,
-  output,
-} from '@angular/core';
+import { Component, EventEmitter, Input, Output, output } from '@angular/core';
 import { LandingPageComponent } from '../landing-page/landing-page.component';
 import { AboutMeComponent } from '../about-me/about-me.component';
 import { MySkillsComponent } from '../my-skills/my-skills.component';
 import { PortfolioComponent } from '../portfolio/portfolio.component';
 import { ContactComponent } from '../contact/contact.component';
-import { ImpressumComponent } from '../impressum/impressum.component';
+import { ImprintComponent } from '../imprint/imprint.component';
 import { BurgerMenuComponent } from '../burger-menu/burger-menu.component';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -26,7 +19,7 @@ import { CommonModule } from '@angular/common';
     MySkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    ImpressumComponent,
+    ImprintComponent,
     BurgerMenuComponent,
     MainContentComponent,
   ],
@@ -40,15 +33,6 @@ export class MainContentComponent {
   @Output() closeMenu = new EventEmitter<void>();
 
   constructor(private router: Router) {}
-
-  ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.showMainContent =
-          event.url !== '/impressum' && event.url !== '/privacy';
-      }
-    });
-  }
 
   closeBurgerMenu() {
     this.closeMenu.emit();
