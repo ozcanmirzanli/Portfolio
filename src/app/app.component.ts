@@ -1,15 +1,8 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet, RouterModule } from '@angular/router';
-import { MainPageComponent } from './main-page/main-page.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './shared/footer/footer.component';
-import { ImpressumComponent } from './impressum/impressum.component';
 import { CommonModule } from '@angular/common';
-import { Router, NavigationEnd } from '@angular/router';
-import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { MainContentComponent } from './main-content/main-content.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 
 @Component({
@@ -19,14 +12,8 @@ import { HeaderComponent } from './shared/header/header.component';
     RouterOutlet,
     CommonModule,
     RouterModule,
-    MainPageComponent,
-    AboutMeComponent,
-    MySkillsComponent,
-    PortfolioComponent,
-    ContactComponent,
+    MainContentComponent,
     FooterComponent,
-    ImpressumComponent,
-    BurgerMenuComponent,
     HeaderComponent,
   ],
   templateUrl: './app.component.html',
@@ -34,20 +21,9 @@ import { HeaderComponent } from './shared/header/header.component';
 })
 export class AppComponent {
   title = 'my-portfolio';
-  showMainContent = true;
+
   isMenuOpen: boolean = false;
   isScreenSmall: boolean = window.innerWidth < 1100;
-
-  constructor(private router: Router) {}
-
-  ngOnInit() {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.showMainContent =
-          event.url !== '/impressum' && event.url !== '/privacy';
-      }
-    });
-  }
 
   closeBurgerMenu() {
     this.isMenuOpen = false;

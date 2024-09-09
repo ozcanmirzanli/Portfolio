@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { MainPageComponent } from './main-page/main-page.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -8,7 +8,7 @@ import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.componen
 import { ContactComponent } from './contact/contact.component';
 
 export const routes: Routes = [
-  { path: '', component: MainPageComponent },
+  { path: '', component: LandingPageComponent },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'my-skills', component: MySkillsComponent },
   { path: 'portfolio', component: PortfolioComponent },
