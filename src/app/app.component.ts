@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
+import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { HeaderComponent } from './shared/header/header.component';
     MainContentComponent,
     FooterComponent,
     HeaderComponent,
+    BurgerMenuComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
@@ -25,12 +27,8 @@ export class AppComponent {
   isMenuOpen: boolean = false;
   isScreenSmall: boolean = window.innerWidth < 1100;
 
-  closeBurgerMenu() {
-    this.isMenuOpen = false;
-  }
-
-  openBurgerMenu() {
-    this.isMenuOpen = true;
+  toggleBurgerMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
   }
 
   @HostListener('window:resize', ['$event'])

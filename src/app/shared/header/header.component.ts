@@ -6,7 +6,7 @@ import {
   EventEmitter,
   HostListener,
 } from '@angular/core';
-import { RouterLink, RouterLinkActive, NavigationEnd } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -28,7 +28,7 @@ export class HeaderComponent {
     { href: '#portfolio', text: 'Portfolio' },
   ];
 
-  openBurgerMenu() {
+  toggleBurgerMenu() {
     this.openMenu.emit(); // Emit event to parent component to open the menu
   }
 

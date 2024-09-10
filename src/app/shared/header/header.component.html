@@ -19,10 +19,15 @@
 
     <div
       class="burger-menu-btn"
-      (click)="openBurgerMenu()"
-      *ngIf="isScreenSmall && !isMenuOpen"
+      [ngClass]="{ 'click-menu': isMenuOpen }"
+      (click)="toggleBurgerMenu()"
+      *ngIf="isScreenSmall"
     >
-      <img src="assets/img/burger_menu_btn.png" alt="burger_menu_btn" />
+      <div>
+        <span class="line-1"></span>
+        <span class="line-2"></span>
+        <span class="line-3"></span>
+      </div>
     </div>
   </div>
 </div>
