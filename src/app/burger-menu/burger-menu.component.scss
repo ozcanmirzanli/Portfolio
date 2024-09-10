@@ -4,6 +4,7 @@
   height: 100vh;
   background-color: #141d2f83;
   z-index: 99;
+  animation: moveRight 0.25s ease-in-out;
 }
 
 .burger-menu-links {
@@ -28,15 +29,12 @@
   }
 }
 
-.close-btn-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
+@keyframes moveRight {
+  0% {
+    transform: translateX(150%); /* Start off-screen to the left */
+  }
 
-  img {
-    margin-right: 60px;
-    margin-top: 40px;
-    position: absolute;
+  100% {
+    transform: translateX(0%); /* Return to the starting position */
   }
 }
