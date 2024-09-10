@@ -117,4 +117,29 @@
   .about-me {
     justify-content: center;
   }
+
+  .about-me-text {
+    margin-left: 0;
+  }
+
+  .about-me-container {
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-me-text {
+    h1 {
+      margin-bottom: 32px;
+    }
+  }
+
+  .about-me-container {
+    padding-top: 100px;
+  }
+
+  .about-me-text {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 }

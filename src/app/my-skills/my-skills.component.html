@@ -1,6 +1,6 @@
 <div class="my-skills-container">
   <div class="my-skills">
-    <div class="my-skills-logos">
+    <div class="my-skills-logos desktop">
       <div class="skill-row" *ngFor="let skillRow of getSkillRows(4)">
         <div class="single-skill" *ngFor="let skill of skillRow">
           <img [src]="skill.image" [alt]="skill.alt" />
@@ -15,7 +15,7 @@
         />
       </div>
     </div>
-   
+
     <div class="my-skills-text">
       <div class="my-skills-title">
         <h1>My skills</h1>
@@ -26,6 +26,14 @@
           I have gained experience in building projects with different frontend
           technologies and concepts.
         </p>
+        <div class="my-skills-logos mobile">
+          <div class="skill-row" *ngFor="let skillRow of getSkillRows(4)">
+            <div class="single-skill" *ngFor="let skill of skillRow">
+              <img [src]="skill.image" [alt]="skill.alt" />
+              <span [innerHTML]="skill.name"></span>
+            </div>
+          </div>
+        </div>
         <h3>
           Looking for
           <span class="purple-text">another skill?</span>

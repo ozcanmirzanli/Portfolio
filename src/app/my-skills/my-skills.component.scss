@@ -128,6 +128,10 @@ h3 {
   top: -275px;
 }
 
+.my-skills-logos.mobile {
+  display: none;
+}
+
 @keyframes up-and-down {
   0% {
     transform: translateY(-20px);
@@ -162,5 +166,51 @@ h3 {
   .my-skills {
     flex-direction: column-reverse;
     align-items: center;
+  }
+
+  .my-skills-logos {
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .my-skills-logos.desktop {
+    display: none;
+  }
+
+  .my-skills-logos.mobile {
+    display: flex;
+  }
+
+  .my-skills-info {
+    margin-right: 0;
+  }
+
+  .single-skill {
+    margin-right: 0;
+  }
+
+  .skill-row {
+    justify-content: space-evenly;
+  }
+
+  .my-skills-container {
+    padding-top: 125px;
+  }
+}
+
+@media (max-width: 700px) {
+  .my-skills-container {
+    padding-top: 100px;
+  }
+
+  .purple-border {
+    margin-left: 10px;
+    width: 60px;
+  }
+
+  .my-skills-info {
+    margin-right: 70px;
   }
 }

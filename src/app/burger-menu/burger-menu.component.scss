@@ -1,5 +1,5 @@
 .burger-menu-layer {
-  position: absolute;
+  position: fixed;
   width: 100vw;
   height: 100vh;
   background-color: #141d2f83;
@@ -36,5 +36,32 @@
 
   100% {
     transform: translateX(0%); /* Return to the starting position */
+  }
+}
+
+@media (max-width: 700px) {
+  .burger-menu-links {
+    a {
+      font-size: 40px;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .burger-menu-links {
+    a {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .burger-menu-links {
+    a {
+      font-size: 23;
+      margin-bottom: 33px;
+    }
   }
 }
