@@ -13,3 +13,13 @@
 #contact {
   scroll-margin-top: 130px;
 }
+
+@media (max-width: 1100px) {
+  #portfolio {
+    scroll-margin-top: -500px;
+  }
+
+  #my-skills {
+    scroll-margin-top: 0;
+  }
+}

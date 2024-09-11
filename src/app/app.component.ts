@@ -31,6 +31,10 @@ export class AppComponent {
     this.isMenuOpen = !this.isMenuOpen;
   }
 
+  closeBurgerMenu() {
+    this.isMenuOpen = false;
+  }
+
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
     this.isScreenSmall = window.innerWidth < 1100; // Dynamically check screen size
