@@ -41,7 +41,7 @@ export class PortfolioComponent {
       imageAlt: 'pokedex',
       reverseClass: '',
       link: 'https://github.com/ozcanmirzanli/Pokedex',
-      liveLink: '',
+      liveLink: 'https://pokedex.ozcanmirdev.com/',
     },
   ];
 }
