@@ -316,6 +316,8 @@
 
 @media (max-width: 500px) {
   .title-container {
+    bottom: 100px;
+
     h1 {
       font-size: 43px;
       line-height: 40px;
@@ -331,6 +333,11 @@
       font-size: 31px;
       margin-top: 16px;
       margin-right: -10px;
+    }
+
+    .green-btn {
+      margin-top: 10px;
+      margin-bottom: 0;
     }
   }
 
@@ -365,5 +372,16 @@
 
   .purple-border {
     width: 60px;
+  }
+
+  .photo-big {
+    width: 320px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 380px) {
+  .background {
+    top: 40%;
   }
 }
