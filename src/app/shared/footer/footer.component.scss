@@ -35,6 +35,10 @@ span {
   line-height: 27.6px;
 }
 
+.legal-notice {
+  display: none;
+}
+
 .contact-links {
   img {
     margin-right: 42px;
@@ -44,5 +48,33 @@ span {
     &:hover {
       transform: scale(1.2);
     }
+  }
+}
+
+@media (max-width: 900px) {
+  .contact-links {
+    img {
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .imprint {
+    display: none;
+  }
+
+  .legal-notice {
+    display: flex;
+    margin-left: 18px;
+    margin-top: 10px;
+  }
+
+  .green-border {
+    margin-top: 240px;
   }
 }

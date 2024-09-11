@@ -215,4 +215,62 @@ span {
   .contact-text {
     margin-right: 5%;
   }
+
+  .required-container {
+    bottom: 20px;
+    left: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-title {
+    margin-top: 80px;
+  }
+
+  .contact-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .purple-border-big {
+    width: 20%;
+    margin-right: 25px;
+  }
+
+  .contact-text {
+    width: 80%;
+  }
+
+  .check-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  button {
+    font-size: 16px;
+    margin-right: 0;
+  }
+
+  .go-up-btn {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 23px;
+    margin-bottom: 10px;
+  }
+
+  input,
+  textarea {
+    margin-bottom: 10% !important;
+  }
+
+  .purple-border-big {
+    width: 15%;
+    margin-right: 15px;
+  }
 }

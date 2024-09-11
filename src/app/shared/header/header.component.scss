@@ -149,3 +149,12 @@ ul {
     }
   }
 }
+
+@media (max-width: 400px) {
+  .header {
+    h2 {
+      font-size: 34px;
+      margin-left: 40px;
+    }
+  }
+}

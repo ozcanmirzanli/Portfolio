@@ -3,7 +3,9 @@
 <div class="footer-container">
   <div class="title-impressum">
     <a href="#landing-page"><h2>Özcan</h2> </a>
-    <a [routerLink]="['/app-imprint']" (click)="scrollToTop()">Imprint</a>
+    <a [routerLink]="['/app-imprint']" (click)="scrollToTop()" class="imprint"
+      >Imprint</a
+    >
   </div>
   <div class="date">
     <span>© Özcan Mirzanli 2024</span>
@@ -18,5 +20,12 @@
     <a href="https://www.linkedin.com/in/ozcan-mirzanli/" target="_blank">
       <img src="assets/img/linkedin_btn.png" alt="linkedin_btn" />
     </a>
+    <a
+      [routerLink]="['/app-privacy-policy']"
+      href="#"
+      (click)="scrollToTop()"
+      class="legal-notice"
+      >Legal Notice</a
+    >
   </div>
 </div>

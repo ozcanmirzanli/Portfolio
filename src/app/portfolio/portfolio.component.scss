@@ -16,7 +16,7 @@
   width: 100px;
   border-bottom: 4px solid #9747ff;
   border-radius: 10px;
-  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .purple-border-big {
@@ -199,5 +199,88 @@ h3 {
 
   .portfolio-container {
     padding-top: 425px;
+  }
+}
+
+@media (max-width: 700px) {
+  p {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .purple-border {
+    width: 50px;
+  }
+
+  .purple-border-big {
+    width: 20%;
+  }
+
+  .project-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .single-project {
+    width: 342px;
+    height: 552.99px;
+    margin-bottom: 100px;
+
+    p {
+      text-align: center;
+    }
+
+    img {
+      width: 342px;
+    }
+
+    .purple-btn {
+      margin-right: 50px;
+    }
+
+    .project-text {
+      width: inherit;
+    }
+  }
+
+  .purple-border-big {
+    margin-left: 10px;
+  }
+
+  .purple-border {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .designed-btn {
+    font-size: 16px;
+    line-height: 19.6px;
+  }
+
+  .single-project {
+    margin-bottom: 80px;
+
+    .purple-btn {
+      margin-right: 30px;
+    }
+
+    p {
+      width: 75%;
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 40px;
   }
 }
