@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+/**
+ * MySkillsComponent is a standalone Angular component that displays
+ * a list of skills with their associated images and names.
+ */
 @Component({
   selector: 'app-my-skills',
   standalone: true,
@@ -38,8 +42,13 @@ export class MySkillsComponent {
     },
   ];
 
-  // Method to split skills into chunks (rows) of the given size
-  getSkillRows(rowSize: number) {
+  /**
+   * Splits the skills array into chunks (rows) of the specified size.
+   * This method is useful for displaying the skills in a grid format.
+   *
+   * @param {number} rowSize - The number of skills to include in each row.
+   * @returns {Array<Array<{ name: string; image: string; alt: string }>>} An array of skill rows, where each row is an array of skill objects.
+   */ getSkillRows(rowSize: number) {
     const rows = [];
     for (let i = 0; i < this.skills.length; i += rowSize) {
       rows.push(this.skills.slice(i, i + rowSize));

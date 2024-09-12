@@ -4,6 +4,10 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
+/**
+ * ContactComponent is a standalone Angular component that provides
+ * a contact form with validation and submission functionality.
+ */
 @Component({
   selector: 'app-contact',
   standalone: true,
@@ -36,6 +40,11 @@ export class ContactComponent {
     },
   };
 
+  /**
+   * Handles the form submission event.
+   * Sends the form data to the server if the form is valid and the checkbox is checked.
+   * @param ngForm - The reference to the Angular form being submitted.
+   */
   onSubmit(ngForm: NgForm) {
     this.isCheckboxTouched = true;
 
@@ -57,19 +66,26 @@ export class ContactComponent {
     }
   }
 
-  // Toggle function to change the checkbox state
-  checkBoxToggle() {
+  /**
+   * Toggles the checkbox state for the privacy policy.
+   * Updates the checkbox touched status.
+   */ checkBoxToggle() {
     this.isChecked = !this.isChecked;
     this.isCheckboxTouched = true;
   }
 
-  // Get the image source based on the checked state
-  get checkboxImageSrc(): string {
+  /**
+   * Gets the image source URL for the checkbox based on its checked state.
+   * @returns A string representing the image source path.
+   */ get checkboxImageSrc(): string {
     return this.isChecked
       ? 'assets/img/checked.png'
       : 'assets/img/unchecked.png';
   }
 
+  /**
+   * Scrolls the window to the top smoothly.
+   */
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
