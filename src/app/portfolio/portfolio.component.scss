@@ -254,6 +254,12 @@ h3 {
   }
 }
 
+@media (max-width: 550px) {
+  .portfolio-title {
+    margin-top: 100px;
+  }
+}
+
 @media (max-width: 400px) {
   .designed-btn {
     font-size: 16px;

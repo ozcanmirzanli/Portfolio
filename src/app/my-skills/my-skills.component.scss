@@ -232,6 +232,12 @@ h3 {
   }
 }
 
+@media (max-width: 550px) {
+  .my-skills-container {
+    padding-top: 50px;
+  }
+}
+
 @media (max-width: 400px) {
   .my-skills-info {
     p {
