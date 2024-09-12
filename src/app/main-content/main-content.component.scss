@@ -23,3 +23,13 @@
     scroll-margin-top: 0;
   }
 }
+
+@media (max-width: 550px) {
+  #portfolio {
+    scroll-margin-top: -400px;
+  }
+
+  #my-skills {
+    scroll-margin-top: 100px;
+  }
+}
