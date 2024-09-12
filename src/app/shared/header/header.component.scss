@@ -2,8 +2,8 @@
   background-color: var(--background-color);
   padding-top: 38px;
   padding-bottom: 38px;
-  position: fixed;
-  width: 100%;
+  position: fixed !important;
+  width: 100vw;
   z-index: 99;
   left: 0;
 
