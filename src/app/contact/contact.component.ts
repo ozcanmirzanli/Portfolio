@@ -23,6 +23,7 @@ export class ContactComponent {
   mailTest = false;
   isChecked = false;
   isCheckboxTouched = false;
+  emailSent = false;
 
   post = {
     endPoint: 'https://ozcanmirdev.com/sendMail.php',
@@ -46,6 +47,7 @@ export class ContactComponent {
             ngForm.resetForm();
             this.isChecked = false;
             this.isCheckboxTouched = false;
+            this.emailSent = true;
           },
           error: (error) => {
             console.error(error);

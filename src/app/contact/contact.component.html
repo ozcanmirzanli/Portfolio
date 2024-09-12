@@ -94,7 +94,9 @@
           <span>Please accept the privacy policy.</span>
         </div>
       </div>
-
+      <div *ngIf="emailSent" class="confirmation-message">
+        Your email has been sent!
+      </div>
       <div class="button-container">
         <button
           class="designed-btn gray-btn"

@@ -133,6 +133,13 @@ span {
   }
 }
 
+.confirmation-message {
+  color: var(--primary-color);
+  margin: 0 auto;
+  font-size: large;
+  margin-top: 10px !important;
+}
+
 .check-box {
   display: flex;
   align-items: center;
