@@ -139,11 +139,11 @@
 }
 
 .photo-big {
-  width: 550px;
-  height: 700px;
+  width: 500px;
+  height: 680px;
   position: absolute;
-  top: 120px;
-  left: 150px;
+  top: 15%;
+  left: 176px;
 }
 
 .scroll-text {
@@ -170,9 +170,9 @@
   }
 
   .photo-big {
-    width: 500px;
-    height: 650px;
-    left: 10%;
+    width: 472px;
+    height: 640px;
+    left: 12%;
   }
 
   .profile-shadow {
@@ -240,7 +240,7 @@
   }
 
   .shadow-container {
-    margin-top: 350px;
+    margin-top: 10%;
   }
 
   .about-me-text {
@@ -257,6 +257,22 @@
 
   .contact-links-container {
     bottom: 20px;
+  }
+
+  .photo-big {
+    width: 430px;
+    height: 590px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1024px) {
+  /* iPad Portrait */
+  .shadow-container {
+    margin-top: -250px !important;
+  }
+
+  .photo-big {
+    top: 325px;
   }
 }
 
@@ -287,7 +303,8 @@
 
   .photo-big {
     width: 400px;
-    height: 525px;
+    height: 535px;
+    top: 12%;
   }
 
   .green-btn {
@@ -375,13 +392,18 @@
   }
 
   .photo-big {
-    width: 320px;
-    height: 420px;
+    width: 335px;
+    height: 445px;
+    top: 160px;
   }
 }
 
 @media (max-width: 380px) {
   .background {
     top: 40%;
+  }
+
+  .photo-big {
+    top: 105px;
   }
 }

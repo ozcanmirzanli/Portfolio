@@ -20,7 +20,7 @@ export class ContactComponent {
     message: '',
   };
 
-  mailTest = true;
+  mailTest = false;
   isChecked = false;
   isCheckboxTouched = false;
 
@@ -38,12 +38,7 @@ export class ContactComponent {
   onSubmit(ngForm: NgForm) {
     this.isCheckboxTouched = true;
 
-    if (
-      ngForm.submitted &&
-      ngForm.form.valid &&
-      !this.mailTest &&
-      this.isChecked
-    ) {
+    if (ngForm.submitted && ngForm.form.valid && this.isChecked) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
@@ -57,8 +52,6 @@ export class ContactComponent {
           },
           complete: () => console.info('send post complete'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      ngForm.resetForm();
     }
   }
 
