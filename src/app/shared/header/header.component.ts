@@ -1,45 +1,59 @@
-import { CommonModule, NgStyle } from '@angular/common';
 import {
   Component,
-  Output,
   Input,
+  Output,
   EventEmitter,
   HostListener,
+  OnInit,
 } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgStyle, CommonModule, RouterLinkActive, RouterLink],
+  imports: [CommonModule, RouterLinkActive, RouterLink, TranslateModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-  @Input() isMenuOpen: boolean = false; // Receive menu state from parent
-  @Input() isScreenSmall: boolean = false; // Receive screen size state from parent
-  @Output() openMenu = new EventEmitter<void>(); // Output event to notify parent to open the burger menu
-
+export class HeaderComponent implements OnInit {
+  @Input() isMenuOpen: boolean = false;
+  @Input() isScreenSmall: boolean = false;
+  @Input() currentLang: string = '';
+  @Input() languages: string[] = [];
+  @Input() changeLanguage!: (lang: string) => void;
+  @Input() getImageSrc!: (lang: string) => string;
+  @Output() openMenu = new EventEmitter<void>();
   activeLink: string = '';
 
-  links = [
-    { href: '#about-me', text: 'About me' },
-    { href: '#my-skills', text: 'Skills' },
-    { href: '#portfolio', text: 'Portfolio' },
-  ];
+  links: { href: string; textKey: string }[] = [];
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    this.initializeLinks();
+  }
+
+  initializeLinks() {
+    this.links = [
+      { href: '#about-me', textKey: 'HEADER.ABOUT_ME' },
+      { href: '#my-skills', textKey: 'HEADER.SKILLS' },
+      { href: '#portfolio', textKey: 'HEADER.PORTFOLIO' },
+    ];
+  }
 
   toggleBurgerMenu() {
-    this.openMenu.emit(); // Emit event to parent component to open the menu
+    this.openMenu.emit();
   }
 
   setActiveLink(link: string) {
-    // Set active link on click
     this.activeLink = link;
   }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    this.checkActiveLink(); // Check which link should be active on scroll
+    this.checkActiveLink();
   }
 
   checkActiveLink() {

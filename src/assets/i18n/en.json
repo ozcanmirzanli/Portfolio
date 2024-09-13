@@ -1,0 +1,125 @@
+{
+  "HEADER": {
+    "ABOUT_ME": "About me",
+    "SKILLS": "Skills",
+    "PORTFOLIO": "Portfolio"
+  },
+
+  "LANDING_PAGE": {
+    "AS": "I am",
+    "NAME": "Özcan Mirzanli",
+    "TITLE": "FRONTEND DEVELOPER",
+    "BUTTON_TEXT": "Let's talk!",
+    "SCROLL_TEXT": "Scroll down →"
+  },
+
+  "ABOUT_ME": {
+    "TITLE": "About Me"
+  },
+  "ABOUT_ME_TEXT": "Hi, I'm a passionate Frontend Developer based in Berlin. I thrive on turning complex ideas into intuitive and visually appealing user experiences. As Edsger Dijkstra wisely said, “The art of programming is the art of organizing complexity, mastering variety, and avoiding chaos.” This philosophy drives me to excel in my work.",
+  "ABOUT_ME_DETAILS": {
+    "LOCATION": "I am adaptable to various work environments and willing to relocate if needed. I prefer hybrid work but am also open to on-site or remote arrangements.",
+    "PROBLEM_SOLVER": "I'm a dedicated problem-solver who enjoys tackling challenges head-on. I relish the opportunity to dive into complex challenges, dissecting them into manageable parts, and crafting elegant solutions. Whether it’s troubleshooting bugs, optimizing performance, or refining user interactions, I’m committed to finding effective, innovative answers.",
+    "CREATIVITY": "My creativity shines through when I translate Figma designs into functional, user-friendly websites with innovative features. Whether it's crafting responsive layouts or implementing engaging interactive elements, I take pride in making each project a unique digital experience."
+  },
+
+  "MY_SKILLS": {
+    "TITLE": "My skills",
+    "EXPERIENCE": "I have gained experience in building projects with different frontend technologies and concepts.",
+    "LOOKING_FOR": "Looking for",
+    "ANOTHER_SKILL": "another skill?",
+    "CONTACT": "Feel free to contact me. I look forward to expanding on my previous knowledge.",
+    "BUTTON_TEXT": "Get in touch"
+  },
+
+  "PORTFOLIO": {
+    "DESCRIPTION": "Explore a selection of my work here - Interact with projects to see my skills in action."
+  },
+
+  "PROJECTS": {
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+    },
+    "EL_POLLO_LOCO": {
+      "TITLE": "El Pollo Loco",
+      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."
+    },
+    "POKEDEX": {
+      "TITLE": "Pokédex",
+      "DESCRIPTION": "Based on the PokéAPI a simple library that provides and catalogues pokemon information."
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Contact",
+    "PROBLEM_SOLVE": "Got a problem to solve?",
+    "CONTACT_TEXT": "Contact me through this form. I am interested in hearing from you, knowing your ideas, and contributing to your projects with my work.",
+    "NEED_FRONTEND_DEV": "Need a Frontend developer? <b>Contact me!</b>",
+    "NAME_PLACEHOLDER": "Your name",
+    "NAME_REQUIRED": "Your name is required",
+    "EMAIL_PLACEHOLDER": "Your email",
+    "EMAIL_REQUIRED": "Your email is required",
+    "MESSAGE_PLACEHOLDER": "Your message",
+    "MESSAGE_REQUIRED": "Your message is empty",
+    "PRIVACY_POLICY_PART1": "I've read the",
+    "PRIVACY_POLICY_LINK": "privacy policy",
+    "PRIVACY_POLICY_PART2": "and agree to the processing of my data as outlined.",
+    "PRIVACY_POLICY_REQUIRED": "Please accept the privacy policy.",
+    "EMAIL_SENT": "Your email has been sent!",
+    "SEND_MESSAGE": "Send message :)"
+  },
+
+  "EXTRAS": {
+    "IMPRINT": "Imprint",
+    "LEGAL_NOTICE": "Legal Notice",
+    "CONTACT": "Contact",
+    "SOURCE": "Source"
+  },
+
+  "PRIVACY_POLICY": "Privacy Policy",
+  "DATA_PROTECTION_OVERVIEW": "1. Data Protection at a Glance",
+  "GENERAL_INFORMATION": "General Information",
+  "DATA_COLLECTION_ON_WEBSITE": "Data Collection on this Website",
+  "DATA_COLLECTION_ON_WEBSITE_CONTENT": "The following information provides a simple overview of what happens to your personal data when you visit this website. Personal data refers to all data that can identify you personally. For detailed information on data protection, please refer to the Privacy Policy listed below this text.",
+  "RESPONSIBLE_FOR_DATA_COLLECTION": "Who is responsible for data collection on this website?",
+  "DATA_PROCESSING": "Data processing on this website is carried out by the website operator. You can find their contact details in the 'Notice on the Responsible Entity' section of this Privacy Policy.",
+  "NOTICE_ON_RESPONSIBLE_ENTITY": "The responsible entity for data processing on this website is Özcan Mirzanli, Müritzstr. 31, 10318, Berlin.",
+  "HOW_WE_COLLECT_DATA": "How do we collect your data?",
+  "HOW_WE_COLLECT_DATA_CONTENT": "Your data is collected partly by you providing it to us, such as data you enter into a contact form. Other data is collected automatically or with your consent when you visit the website through our IT systems. This primarily includes technical data (e.g., internet browser, operating system, or time of page access).",
+  "OTHER_DATA_COLLECTION": "Other data is collected automatically or with your consent when you visit the website through our IT systems.",
+  "USE_OF_DATA": "What do we use your data for?",
+  "USE_OF_DATA_CONTENT": "Some of the data is collected to ensure the proper functioning of the website. Other data may be used to analyze your user behavior.",
+  "RIGHTS_REGARDING_DATA": "What rights do you have regarding your data?",
+  "RIGHTS_REGARDING_DATA_CONTENT": "You have the right to obtain information free of charge about the origin, recipient, and purpose of your stored personal data at any time. You also have the right to request the correction or deletion of this data. If you have given consent to data processing, you can revoke this consent at any time for the future.",
+  "CONTACT_US": "You can contact us at any time regarding this and other questions about data protection.",
+  "HOSTING": "2. Hosting",
+  "WE_HOST_WITH": "We host the content of our website with the following provider:",
+  "EXTERNAL_HOSTING": "External Hosting",
+  "EXTERNAL_HOSTING_CONTENT": "This website is hosted externally. The personal data collected on this website is stored on the servers of the host/provider. This may include IP addresses, contact inquiries, meta and communication data, contract data, contact details, names, website access data, and other data generated through a website.",
+  "HOST_PROCESS_DATA": "Our host will only process your data to the extent necessary to fulfill its service obligations and follow our instructions regarding this data.",
+  "HOST": "www.hostinger.de",
+  "GENERAL_INFORMATION_MANDATORY_INFO": "3. General Information and Mandatory Information",
+  "DATA_PROTECTION": "Data Protection",
+  "DATA_PROTECTION_CONTENT": "The operators of these pages take the protection of your personal data very seriously. We treat your personal data confidentially and in accordance with the legal data protection regulations and this Privacy Policy.",
+  "DATA_TRANSMISSION_SECURITY": "We point out that data transmission over the Internet (e.g., when communicating via email) can have security vulnerabilities. A complete protection of the data against access by third parties is not possible.",
+  "RESPONSIBLE_ENTITY": "Notice on the Responsible Entity",
+  "RESPONSIBLE_ENTITY_EXPLANATION": "The responsible entity is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data.",
+  "STORAGE_DURATION": "Storage Duration",
+  "STORAGE_DURATION_CONTENT": "As long as no more specific storage duration is mentioned in this Privacy Policy, your personal data remains with us until the purpose of data processing no longer applies.",
+  "LEGAL_BASES": "General Information on the Legal Bases for Data Processing on This Website",
+  "LEGAL_BASES_CONTENT": "If you have given consent to data processing, we process your personal data based on Art. 6 para. 1 lit. a GDPR or Art. 9 para. 2 lit. a GDPR, if special categories of data are processed under Art. 9 para. 1 GDPR.",
+  "RECIPIENTS_OF_DATA": "Recipients of Personal Data",
+  "RECIPIENTS_OF_DATA_CONTENT": "In the course of our business activities, we work with various external entities. In some cases, it is necessary to transfer personal data to these external entities.",
+  "REVOCATION_CONSENT": "Revocation of Your Consent to Data Processing",
+  "REVOCATION_CONSENT_CONTENT": "Many data processing operations are only possible with your explicit consent. You can revoke any consent you have already given at any time.",
+  "RIGHT_TO_OBJECT": "Right to Object to Data Collection in Special Cases and to Direct Marketing (Art. 21 GDPR)",
+  "RIGHT_TO_OBJECT_CONTENT": "If data processing is based on Art. 6 para. 1 lit. e or f GDPR, you have the right to object at any time, on grounds relating to your particular situation, to the processing of your personal data.",
+  "RIGHT_TO_OBJECT_DIRECT_MARKETING": "If your personal data is processed for direct marketing purposes, you have the right to object at any time to the processing of your personal data for such marketing.",
+  "RIGHT_TO_COMPLAINT": "Right to Lodge a Complaint with a Supervisory Authority",
+  "RIGHT_TO_COMPLAINT_CONTENT": "In the event of breaches of the GDPR, data subjects have the right to lodge a complaint with a supervisory authority.",
+  "RIGHT_TO_DATA_PORTABILITY": "Right to Data Portability",
+  "RIGHT_TO_DATA_PORTABILITY_CONTENT": "You have the right to receive data that we process automatically based on your consent or in the performance of a contract in a commonly used, machine-readable format.",
+  "INFORMATION_CORRECTION": "Information, Correction, Blocking, and Deletion",
+  "INFORMATION_CORRECTION_CONTENT": "Within the framework of the applicable legal provisions, you have the right to obtain information about your stored personal data, its origin, and recipients, as well as the purpose of the data processing."
+}

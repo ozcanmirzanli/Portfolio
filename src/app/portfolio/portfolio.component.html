@@ -1,13 +1,11 @@
 <div class="portfolio-container">
   <div class="portfolio-title">
     <div class="purple-border"></div>
-    <h1>Portfolio</h1>
+    <h2>Portfolio</h2>
     <div class="purple-border-big"></div>
   </div>
-  <p>
-    Explore a selection of my work here - Interact with projects to see my
-    skills in action.
-  </p>
+  <p>{{ "PORTFOLIO.DESCRIPTION" | translate }}</p>
+
   <div class="project-section">
     <div
       class="single-project"
@@ -18,8 +16,8 @@
         <img [src]="project.image" [alt]="project.imageAlt" />
       </div>
       <div class="project-text">
-        <h2>{{ project.title }}</h2>
-        <h3>{{ project.technologies }}</h3>
+        <h3>{{ project.title }}</h3>
+        <h4>{{ project.technologies }}</h4>
         <p>{{ project.description }}</p>
         <div class="buttons-container">
           <a [href]="project.liveLink" target="_blank">

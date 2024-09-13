@@ -4,9 +4,13 @@
   <div class="footer-content">
     <div class="title-impressum">
       <a href="#landing-page"><h2>Özcan</h2> </a>
-      <a [routerLink]="['/app-imprint']" (click)="scrollToTop()" class="imprint"
-        >Imprint</a
+      <a
+        [routerLink]="['/app-imprint']"
+        (click)="scrollToTop()"
+        class="imprint"
       >
+        {{ "EXTRAS.IMPRINT" | translate }}
+      </a>
     </div>
     <div class="date">
       <span>© Özcan Mirzanli 2024</span>
@@ -30,8 +34,9 @@
         href="#"
         (click)="scrollToTop()"
         class="legal-notice"
-        >Legal Notice</a
       >
+        {{ "EXTRAS.LEGAL_NOTICE" | translate }}
+      </a>
     </div>
   </div>
 </div>

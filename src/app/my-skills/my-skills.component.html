@@ -18,14 +18,11 @@
 
     <div class="my-skills-text">
       <div class="my-skills-title">
-        <h1>My skills</h1>
+        <h2>{{ "MY_SKILLS.TITLE" | translate }}</h2>
         <div class="purple-border"></div>
       </div>
       <div class="my-skills-info">
-        <p>
-          I have gained experience in building projects with different frontend
-          technologies and concepts.
-        </p>
+        <p>{{ "MY_SKILLS.EXPERIENCE" | translate }}</p>
         <div class="my-skills-logos mobile">
           <div class="skill-row" *ngFor="let skillRow of getSkillRows(3)">
             <div class="single-skill" *ngFor="let skill of skillRow">
@@ -35,15 +32,16 @@
           </div>
         </div>
         <h3>
-          Looking for
-          <span class="purple-text">another skill?</span>
+          {{ "MY_SKILLS.LOOKING_FOR" | translate }}
+          <span class="purple-text">{{
+            "MY_SKILLS.ANOTHER_SKILL" | translate
+          }}</span>
         </h3>
-        <p>
-          Feel free to contact me. I look forward to expanding on my previous
-          knowledge.
-        </p>
+        <p>{{ "MY_SKILLS.CONTACT" | translate }}</p>
         <a href="#contact">
-          <button class="designed-btn green-btn">Get in touch</button>
+          <button class="designed-btn green-btn">
+            {{ "MY_SKILLS.BUTTON_TEXT" | translate }}
+          </button>
         </a>
       </div>
     </div>

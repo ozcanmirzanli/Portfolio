@@ -1,10 +1,11 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, inject } from '@angular/core';
 import { RouterOutlet, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MainContentComponent } from './main-content/main-content.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 /**
  * AppComponent serves as the root component for the application.
@@ -22,12 +23,39 @@ import { BurgerMenuComponent } from './burger-menu/burger-menu.component';
     FooterComponent,
     HeaderComponent,
     BurgerMenuComponent,
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
   title = 'my-portfolio';
+
+  languages = ['en', 'de'];
+  public translateService = inject(TranslateService);
+
+  ngOnInit(): void {
+    const defaultLang = localStorage.getItem('language') || 'en';
+    this.translateService.setDefaultLang(defaultLang);
+    this.translateService.use(defaultLang);
+  }
+
+  changeLanguage(lang: string) {
+    this.translateService.use(lang);
+    localStorage.setItem('language', lang);
+  }
+
+  // Method to get image source based on language code
+  getImageSrc(lang: string): string {
+    switch (lang) {
+      case 'de':
+        return 'assets/img/german.png';
+      case 'en':
+        return 'assets/img/english.png';
+      default:
+        return 'assets/img/english.png';
+    }
+  }
 
   isMenuOpen: boolean = false;
   isScreenSmall: boolean = window.innerWidth < 1100;

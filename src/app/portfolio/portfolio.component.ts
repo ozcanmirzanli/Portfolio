@@ -1,49 +1,86 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
 })
-export class PortfolioComponent {
-  projects = [
-    {
-      title: 'Join',
-      technologies: 'JavaScript | HTML | CSS',
-      description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      image: 'assets/img/join.png',
-      imageAlt: 'join',
-      reverseClass: '',
-      link: 'https://github.com/ozcanmirzanli/Join',
-      liveLink: 'https://join.ozcanmirdev.com/',
-    },
-    {
-      title: 'El Pollo Loco',
-      technologies: 'JavaScript | HTML | CSS',
-      description:
-        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      image: 'assets/img/polloloco.png',
-      imageAlt: 'polloloco',
-      reverseClass: 'row-reverse',
-      link: 'https://github.com/ozcanmirzanli/El-Pollo-Loco',
-      liveLink: 'https://elpolloloco.ozcanmirdev.com/',
-    },
-    {
-      title: 'Pokédex',
-      technologies: 'JavaScript | HTML | CSS | API',
-      description:
-        'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
-      image: 'assets/img/pokedex.png',
-      imageAlt: 'pokedex',
-      reverseClass: '',
-      link: 'https://github.com/ozcanmirzanli/Pokedex',
-      liveLink: 'https://pokedex.ozcanmirdev.com/',
-    },
-  ];
+export class PortfolioComponent implements OnInit {
+  projects: any[] = [];
+  private languageChangeSubscription: Subscription = new Subscription();
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    this.loadProjects();
+
+    // Subscribe to language change events
+    this.languageChangeSubscription = this.translate.onLangChange.subscribe(
+      () => {
+        this.loadProjects();
+      }
+    );
+  }
+
+  ngOnDestroy() {
+    // Unsubscribe to avoid memory leaks
+    this.languageChangeSubscription.unsubscribe();
+  }
+
+  private loadProjects() {
+    // Use translate.get() for asynchronous translation fetching
+    this.translate
+      .get([
+        'PROJECTS.JOIN.TITLE',
+        'PROJECTS.JOIN.TECHNOLOGIES',
+        'PROJECTS.JOIN.DESCRIPTION',
+        'PROJECTS.EL_POLLO_LOCO.TITLE',
+        'PROJECTS.EL_POLLO_LOCO.TECHNOLOGIES',
+        'PROJECTS.EL_POLLO_LOCO.DESCRIPTION',
+        'PROJECTS.POKEDEX.TITLE',
+        'PROJECTS.POKEDEX.TECHNOLOGIES',
+        'PROJECTS.POKEDEX.DESCRIPTION',
+      ])
+      .subscribe((translations) => {
+        this.projects = [
+          {
+            title: translations['PROJECTS.JOIN.TITLE'],
+            technologies: 'JavaScript | HTML | CSS',
+            description: translations['PROJECTS.JOIN.DESCRIPTION'],
+            image: 'assets/img/join.png',
+            imageAlt: 'join',
+            reverseClass: '',
+            link: 'https://github.com/ozcanmirzanli/Join',
+            liveLink: 'https://join.ozcanmirdev.com/',
+          },
+          {
+            title: translations['PROJECTS.EL_POLLO_LOCO.TITLE'],
+            technologies: 'JavaScript | HTML | CSS',
+            description: translations['PROJECTS.EL_POLLO_LOCO.DESCRIPTION'],
+            image: 'assets/img/polloloco.png',
+            imageAlt: 'polloloco',
+            reverseClass: 'row-reverse',
+            link: 'https://github.com/ozcanmirzanli/El-Pollo-Loco',
+            liveLink: 'https://elpolloloco.ozcanmirdev.com/',
+          },
+          {
+            title: translations['PROJECTS.POKEDEX.TITLE'],
+            technologies: 'JavaScript | HTML | CSS | API',
+            description: translations['PROJECTS.POKEDEX.DESCRIPTION'],
+            image: 'assets/img/pokedex.png',
+            imageAlt: 'pokedex',
+            reverseClass: '',
+            link: 'https://github.com/ozcanmirzanli/Pokedex',
+            liveLink: 'https://pokedex.ozcanmirdev.com/',
+          },
+        ];
+      });
+  }
 
   isLastButton(project: any): boolean {
     const lastProject = this.projects[this.projects.length - 1];

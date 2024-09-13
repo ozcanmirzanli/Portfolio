@@ -1,7 +1,14 @@
 <div class="header">
   <div class="header-content">
     <a href="#" onclick="window.location.reload();"><h2>Özcan</h2></a>
-
+    <div class="translation-switch">
+      <img
+        *ngFor="let lang of languages"
+        [src]="getImageSrc(lang)"
+        [alt]="lang"
+        (click)="changeLanguage(lang)"
+      />
+    </div>
     <div class="header-links">
       <ul>
         <li *ngFor="let link of links">
@@ -10,11 +17,10 @@
             (click)="setActiveLink(link.href)"
             [ngClass]="{ 'active-link': activeLink === link.href }"
           >
-            {{ link.text }}
+            {{ link.textKey | translate }}
           </a>
         </li>
       </ul>
-      <div></div>
     </div>
 
     <div

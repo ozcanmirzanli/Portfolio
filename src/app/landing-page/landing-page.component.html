@@ -13,14 +13,16 @@
 
     <div class="title-container">
       <div class="relative-container">
-        <h3>I am</h3>
+        <h3>{{ "LANDING_PAGE.AS" | translate }}</h3>
       </div>
       <div class="title">
-        <h1>Özcan Mirzanli</h1>
-        <h2>FRONTEND DEVELOPER</h2>
+        <h1>{{ "LANDING_PAGE.NAME" | translate }}</h1>
+        <h2>{{ "LANDING_PAGE.TITLE" | translate }}</h2>
         <div class="center-btn">
           <a href="#contact">
-            <button class="designed-btn green-btn">Let's talk!</button>
+            <button class="designed-btn green-btn">
+              {{ "LANDING_PAGE.BUTTON_TEXT" | translate }}
+            </button>
           </a>
         </div>
       </div>
@@ -46,7 +48,7 @@
       <span>ozcanmirzanli&#64;proton.me</span>
     </div>
     <div class="scroll-text">
-      <span>Scroll down &#8594; </span>
+      <span>{{ "LANDING_PAGE.SCROLL_TEXT" | translate }}</span>
     </div>
   </div>
 </div>

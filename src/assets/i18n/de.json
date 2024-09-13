@@ -1,0 +1,124 @@
+{
+  "HEADER": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Fähigkeiten",
+    "PORTFOLIO": "Portfolio"
+  },
+  "LANDING_PAGE": {
+    "AS": "Ich bin",
+    "NAME": "Özcan Mirzanli",
+    "TITLE": "FRONTEND-ENTWICKLER",
+    "BUTTON_TEXT": "Lass uns sprechen!",
+    "SCROLL_TEXT": "Nach unten scrollen →"
+  },
+
+  "ABOUT_ME": {
+    "TITLE": "Über mich"
+  },
+  "ABOUT_ME_TEXT": "Hallo, ich bin ein leidenschaftlicher Frontend-Entwickler aus Berlin. Ich freue mich darauf, komplexe Ideen in intuitive und visuell ansprechende Benutzererfahrungen zu verwandeln. Wie Edsger Dijkstra weise sagte: „Die Kunst des Programmierens ist die Kunst, Komplexität zu organisieren, Vielfalt zu meistern und Chaos zu vermeiden.“ Diese Philosophie treibt mich dazu an, in meiner Arbeit exzellent zu sein.",
+  "ABOUT_ME_DETAILS": {
+    "LOCATION": "Ich bin anpassungsfähig an verschiedene Arbeitsumgebungen und bereit, bei Bedarf umzuziehen. Ich bevorzuge hybride Arbeitsweise, bin aber auch offen für Vor-Ort- oder Remote-Arrangements.",
+    "PROBLEM_SOLVER": "Ich bin ein engagierter Problemlöser, der es genießt, Herausforderungen direkt anzugehen. Ich freue mich darauf, komplexe Herausforderungen zu analysieren, in handhabbare Teile zu zerlegen und elegante Lösungen zu entwickeln. Ob bei der Fehlersuche, der Leistungsoptimierung oder der Verfeinerung der Benutzerinteraktionen, ich bin bestrebt, effektive, innovative Antworten zu finden.",
+    "CREATIVITY": "Meine Kreativität kommt zum Vorschein, wenn ich Figma-Designs in funktionale, benutzerfreundliche Websites mit innovativen Funktionen umsetze. Ob bei der Erstellung responsiver Layouts oder der Implementierung ansprechender interaktiver Elemente, ich lege großen Wert darauf, jedes Projekt zu einem einzigartigen digitalen Erlebnis zu machen."
+  },
+
+  "MY_SKILLS": {
+    "TITLE": "Meine Fähigkeiten",
+    "EXPERIENCE": "Ich habe Erfahrung im Aufbau von Projekten mit verschiedenen Frontend-Technologien und -Konzepten gesammelt.",
+    "LOOKING_FOR": "Auf der Suche nach",
+    "ANOTHER_SKILL": "einer weiteren Fähigkeit?",
+    "CONTACT": "Fühlen Sie sich frei, mich zu kontaktieren. Ich freue mich darauf, mein vorheriges Wissen weiter auszubauen.",
+    "BUTTON_TEXT": "Kontakt aufnehmen"
+  },
+
+  "PORTFOLIO": {
+    "DESCRIPTION": "Entdecken Sie eine Auswahl meiner Arbeiten hier - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen."
+  },
+
+  "PROJECTS": {
+    "JOIN": {
+      "TITLE": "Join",
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+    },
+    "EL_POLLO_LOCO": {
+      "TITLE": "El Pollo Loco",
+      "DESCRIPTION": "Spring-, Lauf- und Wurfspiel basierend auf dem objektorientierten Ansatz. Helfen Sie Pepe, Münzen und Tabasco-Salsa zu finden, um gegen das verrückte Huhn zu kämpfen."
+    },
+    "POKEDEX": {
+      "TITLE": "Pokédex",
+      "DESCRIPTION": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokémon-Informationen bereitstellt und katalogisiert."
+    }
+  },
+
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "PROBLEM_SOLVE": "Haben Sie ein Problem zu lösen?",
+    "CONTACT_TEXT": "Kontaktieren Sie mich über dieses Formular. Ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen kennenzulernen und zu Ihren Projekten beizutragen.",
+    "NEED_FRONTEND_DEV": "Brauchen Sie einen Frontend-Entwickler? <b>Kontaktieren Sie mich!</b>",
+    "NAME_PLACEHOLDER": "Ihr Name",
+    "NAME_REQUIRED": "Ihr Name ist erforderlich",
+    "EMAIL_PLACEHOLDER": "Ihre E-Mail",
+    "EMAIL_REQUIRED": "Ihre E-Mail ist erforderlich",
+    "MESSAGE_PLACEHOLDER": "Ihre Nachricht",
+    "MESSAGE_REQUIRED": "Ihre Nachricht ist leer",
+    "PRIVACY_POLICY_PART1": "Ich habe die",
+    "PRIVACY_POLICY_LINK": "Datenschutzrichtlinie",
+    "PRIVACY_POLICY_PART2": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+    "PRIVACY_POLICY_REQUIRED": "Bitte akzeptieren Sie die Datenschutzrichtlinie.",
+    "EMAIL_SENT": "Ihre E-Mail wurde gesendet!",
+    "SEND_MESSAGE": "Nachricht senden :)"
+  },
+
+  "EXTRAS": {
+    "IMPRINT": "Impressum",
+    "LEGAL_NOTICE": "Rechtshinweis",
+    "CONTACT": "Kontakt",
+    "SOURCE": "Quelle"
+  },
+
+  "PRIVACY_POLICY": "Datenschutzbestimmungen",
+  "DATA_PROTECTION_OVERVIEW": "1. Datenschutz auf einen Blick",
+  "GENERAL_INFORMATION": "Allgemeine Informationen",
+  "DATA_COLLECTION_ON_WEBSITE": "Datenaufzeichnung auf dieser Website",
+  "DATA_COLLECTION_ON_WEBSITE_CONTENT": "Die folgenden Informationen bieten einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, die Sie persönlich identifizieren können. Für detaillierte Informationen zum Datenschutz beachten Sie bitte die Datenschutzerklärung, die unter diesem Text aufgeführt ist.",
+  "RESPONSIBLE_FOR_DATA_COLLECTION": "Wer ist für die Datenaufzeichnung auf dieser Website verantwortlich?",
+  "DATA_PROCESSING": "Die Datenverarbeitung auf dieser Website erfolgt durch den Betreiber der Website. Die Kontaktdaten finden Sie im Abschnitt 'Hinweis zur verantwortlichen Stelle' dieser Datenschutzerklärung.",
+  "NOTICE_ON_RESPONSIBLE_ENTITY": "Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist Özcan Mirzanli, Müritzstr. 31, 10318, Berlin.",
+  "HOW_WE_COLLECT_DATA": "Wie erfassen wir Ihre Daten?",
+  "HOW_WE_COLLECT_DATA_CONTENT": "Ihre Daten werden teilweise durch die Bereitstellung durch Sie erfasst, z.B. Daten, die Sie in ein Kontaktformular eingeben. Weitere Daten werden automatisch oder mit Ihrer Zustimmung erfasst, wenn Sie die Website über unsere IT-Systeme besuchen. Dies umfasst hauptsächlich technische Daten (z.B. Internetbrowser, Betriebssystem oder Zeit des Seitenzugriffs).",
+  "OTHER_DATA_COLLECTION": "Weitere Daten werden automatisch oder mit Ihrer Zustimmung erfasst, wenn Sie die Website über unsere IT-Systeme besuchen.",
+  "USE_OF_DATA": "Wofür verwenden wir Ihre Daten?",
+  "USE_OF_DATA_CONTENT": "Einige der Daten werden erfasst, um das ordnungsgemäße Funktionieren der Website sicherzustellen. Andere Daten können verwendet werden, um Ihr Nutzerverhalten zu analysieren.",
+  "RIGHTS_REGARDING_DATA": "Welche Rechte haben Sie bezüglich Ihrer Daten?",
+  "RIGHTS_REGARDING_DATA_CONTENT": "Sie haben das Recht, jederzeit kostenlos Auskunft über die Herkunft, den Empfänger und den Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten. Sie haben auch das Recht, die Berichtigung oder Löschung dieser Daten zu verlangen. Wenn Sie der Datenverarbeitung zugestimmt haben, können Sie diese Zustimmung jederzeit für die Zukunft widerrufen.",
+  "CONTACT_US": "Sie können uns jederzeit bezüglich dieser und anderer Fragen zum Datenschutz kontaktieren.",
+  "HOSTING": "2. Hosting",
+  "WE_HOST_WITH": "Wir hosten die Inhalte unserer Website bei folgendem Anbieter:",
+  "EXTERNAL_HOSTING": "Externe Hosting",
+  "EXTERNAL_HOSTING_CONTENT": "Diese Website wird extern gehostet. Die auf dieser Website erfassten personenbezogenen Daten werden auf den Servern des Hosting-Anbieters gespeichert. Dies kann IP-Adressen, Kontaktanfragen, Metadaten und Kommunikationsdaten, Vertragsdaten, Kontaktdaten, Namen, Website-Zugriffsdaten und andere Daten umfassen, die durch eine Website generiert werden.",
+  "HOST_PROCESS_DATA": "Unser Host verarbeitet Ihre Daten nur in dem Umfang, der zur Erfüllung seiner Dienstleistungsaufträge erforderlich ist, und folgt unseren Anweisungen bezüglich dieser Daten.",
+  "HOST": "www.hostinger.de",
+  "GENERAL_INFORMATION_MANDATORY_INFO": "3. Allgemeine Informationen und Pflichtinformationen",
+  "DATA_PROTECTION": "Datenschutz",
+  "DATA_PROTECTION_CONTENT": "Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und gemäß den gesetzlichen Datenschutzvorschriften und dieser Datenschutzerklärung.",
+  "DATA_TRANSMISSION_SECURITY": "Wir weisen darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitslücken aufweisen kann. Ein vollständiger Schutz der Daten vor dem Zugriff durch Dritte ist nicht möglich.",
+  "RESPONSIBLE_ENTITY": "Hinweis zur verantwortlichen Stelle",
+  "RESPONSIBLE_ENTITY_EXPLANATION": "Die verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen die Zwecke und Mittel der Verarbeitung personenbezogener Daten bestimmt.",
+  "STORAGE_DURATION": "Speicherdauer",
+  "STORAGE_DURATION_CONTENT": "Sofern keine spezifischere Speicherdauer in dieser Datenschutzerklärung genannt wird, verbleiben Ihre personenbezogenen Daten bei uns, bis der Zweck der Datenverarbeitung entfällt.",
+  "LEGAL_BASES": "Allgemeine Informationen zu den rechtlichen Grundlagen der Datenverarbeitung auf dieser Website",
+  "LEGAL_BASES_CONTENT": "Sofern Sie Ihre Einwilligung zur Datenverarbeitung gegeben haben, verarbeiten wir Ihre personenbezogenen Daten auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO oder Art. 9 Abs. 2 lit. a DSGVO, falls besondere Kategorien von Daten gemäß Art. 9 Abs. 1 DSGVO verarbeitet werden.",
+  "RECIPIENTS_OF_DATA": "Empfänger der personenbezogenen Daten",
+  "RECIPIENTS_OF_DATA_CONTENT": "Im Rahmen unserer Geschäftstätigkeit arbeiten wir mit verschiedenen externen Stellen zusammen. In einigen Fällen ist es notwendig, personenbezogene Daten an diese externen Stellen weiterzugeben.",
+  "REVOCATION_CONSENT": "Widerruf Ihrer Einwilligung zur Datenverarbeitung",
+  "REVOCATION_CONSENT_CONTENT": "Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung jederzeit widerrufen.",
+  "RIGHT_TO_OBJECT": "Recht auf Widerspruch gegen die Datenverarbeitung in besonderen Fällen und gegen Direktwerbung (Art. 21 DSGVO)",
+  "RIGHT_TO_OBJECT_CONTENT": "Wenn die Datenverarbeitung auf Basis von Art. 6 Abs. 1 lit. e oder f DSGVO erfolgt, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten einzulegen, wenn sich Ihre besondere Situation ergibt.",
+  "RIGHT_TO_OBJECT_DIRECT_MARKETING": "Wenn Ihre personenbezogenen Daten für Direktwerbung verarbeitet werden, haben Sie das Recht, jederzeit Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten für solche Werbung einzulegen.",
+  "RIGHT_TO_COMPLAINT": "Recht auf Beschwerde bei einer Aufsichtsbehörde",
+  "RIGHT_TO_COMPLAINT_CONTENT": "Im Falle von Verstößen gegen die DSGVO haben betroffene Personen das Recht, bei einer Aufsichtsbehörde Beschwerde einzulegen.",
+  "RIGHT_TO_DATA_PORTABILITY": "Recht auf Datenübertragbarkeit",
+  "RIGHT_TO_DATA_PORTABILITY_CONTENT": "Sie haben das Recht, die Daten, die wir automatisch auf Grundlage Ihrer Einwilligung oder zur Erfüllung eines Vertrags verarbeiten, in einem gängigen, maschinenlesbaren Format zu erhalten.",
+  "INFORMATION_CORRECTION": "Informationen, Berichtigung, Sperrung und Löschung",
+  "INFORMATION_CORRECTION_CONTENT": "Im Rahmen der geltenden gesetzlichen Bestimmungen haben Sie das Recht, Informationen über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung zu erhalten."
+}

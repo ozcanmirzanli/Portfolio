@@ -7,6 +7,9 @@
     [isMenuOpen]="isMenuOpen"
     [isScreenSmall]="isScreenSmall"
     (openMenu)="toggleBurgerMenu()"
+    [languages]="languages"
+    [changeLanguage]="changeLanguage.bind(this)"
+    [getImageSrc]="getImageSrc.bind(this)"
   ></app-header>
 
   <router-outlet></router-outlet>
