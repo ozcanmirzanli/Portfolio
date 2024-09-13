@@ -23,7 +23,12 @@
         <p>{{ project.description }}</p>
         <div class="buttons-container">
           <a [href]="project.liveLink" target="_blank">
-            <button class="designed-btn purple-btn">Live test</button>
+            <button
+              class="designed-btn purple-btn"
+              [ngClass]="{ 'last-purple-btn': isLastButton(project) }"
+            >
+              Live test
+            </button>
           </a>
           <a [href]="project.link" target="_blank">
             <button class="designed-btn empty-green-btn">Github</button>

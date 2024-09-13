@@ -44,10 +44,30 @@ p {
   display: flex;
   height: 339px;
   margin-bottom: 80px;
+  opacity: 0; /* Start with the element invisible */
+  transition: opacity 0.5s ease-out;
 
   p {
     text-align: left;
   }
+}
+
+.single-project.reverse {
+  flex-direction: row-reverse; /* Reverse the order */
+
+  img {
+    margin-left: 100px;
+    margin-right: 0;
+  }
+}
+
+.single-project.animate {
+  opacity: 1; /* Make it visible when animation triggers */
+  animation: slide-in-right 0.5s ease-out forwards;
+}
+
+.single-project.reverse.animate {
+  animation: slide-in-left 0.5s ease-out forwards;
 }
 
 h2 {
@@ -72,15 +92,6 @@ h3 {
   flex-direction: column;
   justify-content: center;
   width: 513px;
-}
-
-.single-project.reverse {
-  flex-direction: row-reverse; /* Reverse the order */
-
-  img {
-    margin-left: 100px;
-    margin-right: 0;
-  }
 }
 
 .flex-end {
@@ -126,6 +137,29 @@ h3 {
   left: -300px;
   top: -350px;
   z-index: -1;
+  animation: shadowPulse 2.5s infinite ease-in-out;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1440px) {
@@ -203,6 +237,11 @@ h3 {
 }
 
 @media (max-width: 700px) {
+  .last-purple-btn {
+    border: 1.5px solid var(--primary-color);
+    border-radius: 10px;
+  }
+
   p {
     width: 90%;
     margin-left: 5%;

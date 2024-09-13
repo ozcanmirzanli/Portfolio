@@ -11,6 +11,9 @@
 
 .profile-shadow {
   position: absolute;
+  animation: shadowPulse 2.5s infinite ease-in-out;
+  transform-origin: center;
+  left: -5%;
 }
 
 .profile-picture {
@@ -149,6 +152,17 @@
 .scroll-text {
   transform: rotate(90deg);
   width: 200px;
+  animation: scrollTextAnimation 1.5s infinite ease-in-out;
+}
+
+@keyframes scrollTextAnimation {
+  0%,
+  100% {
+    transform: translateY(0) rotate(90deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(90deg);
+  }
 }
 
 @media (max-width: 1440px) {
@@ -176,7 +190,7 @@
   }
 
   .profile-shadow {
-    left: -5%;
+    left: -8%;
     position: relative;
   }
 

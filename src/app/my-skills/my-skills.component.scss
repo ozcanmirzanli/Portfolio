@@ -120,6 +120,7 @@ h3 {
 
 .shadow-container {
   position: relative;
+  animation: shadowPulse 2.5s infinite ease-in-out;
 }
 
 .green-shadow {

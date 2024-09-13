@@ -10,8 +10,17 @@
   align-items: center;
   height: 291px;
   background-color: var(--background-color);
-  width: 100%; /* Ensures it spans full width */
-  margin-top: auto; /* Makes sure it's at the bottom */
+  width: 100%;
+  margin-top: auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 1440px;
 }
 
 h2 {
@@ -60,8 +69,13 @@ span {
 }
 
 @media (max-width: 700px) {
-  .footer-container {
+  .footer-container,
+  .footer-content {
     flex-direction: column;
+  }
+
+  .footer-content {
+    gap: 10px;
   }
 
   .imprint {
@@ -71,7 +85,7 @@ span {
   .legal-notice {
     display: flex;
     margin-left: 18px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 
   .green-border {

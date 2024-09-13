@@ -2,7 +2,7 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #141d2f83;
+  background-color: #141d2fcc;
   z-index: 99;
   animation: moveRight 0.25s ease-in-out;
 }
@@ -28,8 +28,6 @@
     }
   }
 }
-
-
 
 @keyframes moveRight {
   0% {

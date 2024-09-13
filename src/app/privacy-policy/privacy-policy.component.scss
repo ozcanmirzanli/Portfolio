@@ -5,12 +5,12 @@
 }
 
 .privacy-container {
-  margin-top: 150px;
+  margin-top: 150px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 h1 {

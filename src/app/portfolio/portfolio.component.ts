@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -44,4 +44,30 @@ export class PortfolioComponent {
       liveLink: 'https://pokedex.ozcanmirdev.com/',
     },
   ];
+
+  isLastButton(project: any): boolean {
+    const lastProject = this.projects[this.projects.length - 1];
+    return project === lastProject;
+  }
+
+  /**
+   * Detects the scroll event and triggers animations for project elements.
+   * When the user scrolls the page, this function checks the position
+   * of each '.single-project' element in the viewport.
+   * @returns {void}
+   */
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const elements = document.querySelectorAll('.single-project');
+    elements.forEach((element) => {
+      const rect = element.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+
+      if (rect.top < viewportHeight - 100) {
+        element.classList.add('animate');
+      } else {
+        element.classList.remove('animate');
+      }
+    });
+  }
 }
