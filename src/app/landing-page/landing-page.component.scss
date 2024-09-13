@@ -140,7 +140,7 @@
 
 .photo-big {
   width: 500px;
-  height: 680px;
+  height: auto;
   position: absolute;
   top: 15%;
   left: 176px;
@@ -171,7 +171,7 @@
 
   .photo-big {
     width: 472px;
-    height: 640px;
+    height: auto;
     left: 12%;
   }
 
@@ -261,7 +261,6 @@
 
   .photo-big {
     width: 430px;
-    height: 590px;
   }
 }
 
@@ -303,7 +302,6 @@
 
   .photo-big {
     width: 400px;
-    height: 535px;
   }
 
   .green-btn {
@@ -392,7 +390,6 @@
 
   .photo-big {
     width: 335px;
-    height: 445px;
   }
 }
 
