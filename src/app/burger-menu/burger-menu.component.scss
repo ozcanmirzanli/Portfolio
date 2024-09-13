@@ -5,7 +5,6 @@
   background-color: #141d2f83;
   z-index: 99;
   animation: moveRight 0.25s ease-in-out;
-  overflow: hidden;
 }
 
 .burger-menu-links {
@@ -29,6 +28,8 @@
     }
   }
 }
+
+
 
 @keyframes moveRight {
   0% {

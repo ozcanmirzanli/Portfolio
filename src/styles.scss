@@ -53,6 +53,11 @@ body {
   --background-color: #141d2f;
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
 app-porfolio {
   margin-top: 100px;
 }
