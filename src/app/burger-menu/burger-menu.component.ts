@@ -7,11 +7,12 @@ import {
   ViewEncapsulation,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-burger-menu',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss',
   encapsulation: ViewEncapsulation.None,
@@ -20,12 +21,22 @@ export class BurgerMenuComponent {
   @Input() isMenuOpen: boolean = false; // Input from parent component
   @Output() closeMenu = new EventEmitter<void>(); // Output event to notify parent to close menu
 
-  links = [
-    { href: '#about-me', text: 'About me' },
-    { href: '#my-skills', text: 'Skills' },
-    { href: '#portfolio', text: 'Portfolio' },
-    { href: '#contact', text: 'Contact' },
-  ];
+  links: { href: string; textKey: string }[] = [];
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    this.initializeLinks();
+  }
+
+  initializeLinks() {
+    this.links = [
+      { href: '#about-me', textKey: 'HEADER.ABOUT_ME' },
+      { href: '#my-skills', textKey: 'HEADER.SKILLS' },
+      { href: '#portfolio', textKey: 'HEADER.PORTFOLIO' },
+      { href: '#contact', textKey: 'HEADER.CONTACT' },
+    ];
+  }
 
   /**
    * Handles changes to the component's input properties.

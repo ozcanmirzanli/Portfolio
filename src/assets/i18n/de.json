@@ -2,8 +2,10 @@
   "HEADER": {
     "ABOUT_ME": "Über mich",
     "SKILLS": "Fähigkeiten",
-    "PORTFOLIO": "Portfolio"
+    "PORTFOLIO": "Portfolio",
+    "CONTACT": "Kontakt"
   },
+
   "LANDING_PAGE": {
     "AS": "Ich bin",
     "NAME": "Özcan Mirzanli",

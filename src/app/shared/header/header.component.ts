@@ -5,6 +5,7 @@ import {
   EventEmitter,
   HostListener,
   OnInit,
+  inject,
 } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -29,7 +30,7 @@ export class HeaderComponent implements OnInit {
 
   links: { href: string; textKey: string }[] = [];
 
-  constructor(private translate: TranslateService) {}
+  public translateService = inject(TranslateService);
 
   ngOnInit() {
     this.initializeLinks();
@@ -41,6 +42,10 @@ export class HeaderComponent implements OnInit {
       { href: '#my-skills', textKey: 'HEADER.SKILLS' },
       { href: '#portfolio', textKey: 'HEADER.PORTFOLIO' },
     ];
+  }
+
+  getBrightnessClass(lang: string): string {
+    return lang === this.translateService.currentLang ? 'bright' : 'dim';
   }
 
   toggleBurgerMenu() {

@@ -31,7 +31,11 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'my-portfolio';
 
+  isMenuOpen: boolean = false;
+  isScreenSmall: boolean = window.innerWidth < 1100;
+
   languages = ['en', 'de'];
+
   public translateService = inject(TranslateService);
   private renderer = inject(Renderer2);
 
@@ -69,8 +73,10 @@ export class AppComponent {
     }
   }
 
-  isMenuOpen: boolean = false;
-  isScreenSmall: boolean = window.innerWidth < 1100;
+  // Method to get brightness class based on language
+  getBrightnessClass(lang: string): string {
+    return lang === 'en' ? 'bright' : 'dim';
+  }
 
   /**
    * Toggles the burger menu's open/closed state.

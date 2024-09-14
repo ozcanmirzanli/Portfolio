@@ -52,6 +52,7 @@ ul {
 }
 
 .burger-menu-btn {
+  cursor: pointer;
   div {
     width: 40px;
     height: 40px;
@@ -125,9 +126,17 @@ ul {
     cursor: pointer;
 
     &:hover {
-      filter: brightness(1.8);
+      filter: brightness(2);
     }
   }
+}
+
+.bright {
+  filter: brightness(2); /* Brighter */
+}
+
+.dim {
+  filter: brightness(1); /* Normal */
 }
 
 @media (max-width: 1450px) {
@@ -176,6 +185,15 @@ ul {
   .translation-switch {
     img {
       width: 40%;
+    }
+  }
+
+  .burger-menu-btn {
+    margin-right: 15px;
+
+    div {
+      width: 35px;
+      height: 35px;
     }
   }
 }
