@@ -36,11 +36,13 @@ export class MySkillsComponent {
       name: 'Material Design',
       image: 'assets/img/material_design.png',
       alt: 'material design',
+      specialClass: 'last-two',
     },
     {
       name: 'Continually Learning',
       image: 'assets/img/learning.png',
       alt: 'learning',
+      specialClass: 'last-two',
     },
   ];
 

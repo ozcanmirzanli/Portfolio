@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 100px;
+  position: relative;
 }
 
 .contact-title {
@@ -182,16 +183,14 @@ textarea {
   }
 }
 
-.shadow-container {
-  position: relative;
-}
-
-.purple-shadow-footer {
+.purple-shadow-contact {
   position: absolute;
-  position: absolute;
-  top: -400px;
-  left: -600px;
   z-index: -1;
+  height: 100%;
+  width: 80%;
+  bottom: -500px;
+  left: -600px;
+  animation: shadowPulse 2.5s infinite ease-in-out;
 }
 
 @media (max-width: 1200px) {

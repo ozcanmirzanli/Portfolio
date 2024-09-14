@@ -45,6 +45,10 @@
     margin-top: 35px !important;
     margin-right: 0 !important;
   }
+
+  .green-shadow-skills {
+    left: -550px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -100,6 +104,10 @@
     img {
       width: 40px;
     }
+  }
+
+  .green-shadow-skills {
+    left: -650px;
   }
 }
 

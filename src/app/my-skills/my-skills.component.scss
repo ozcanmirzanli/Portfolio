@@ -38,7 +38,15 @@
     position: absolute;
     bottom: -25px;
     text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100px;
   }
+}
+
+/* Apply specific styles to the last two skills */
+.last-two {
+  margin-bottom: -20px !important;
 }
 
 .green-btn-skills {
@@ -117,15 +125,12 @@ h3 {
   }
 }
 
-.shadow-container-skills {
-  position: relative;
-  animation: shadowPulse 2.5s infinite ease-in-out;
-}
-
 .green-shadow-skills {
   position: absolute;
-  left: -685px;
-  top: -275px;
+  animation: shadowPulse 2.5s infinite ease-in-out;
+  z-index: -1;
+  left: -350px;
+  transform: rotate(45deg);
 }
 
 .my-skills-logos.mobile {

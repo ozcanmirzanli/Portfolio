@@ -35,7 +35,9 @@
 .project-section {
   margin-top: 32px;
   margin-left: 136px;
+}
 
+.project-img {
   img {
     width: 450px;
     margin-right: 100px;
@@ -131,15 +133,14 @@
   }
 }
 
-.shadow-container {
+.shadow-container-portfolio {
   position: relative;
 }
 
 .purple-shadow-portfolio {
   position: absolute;
-  transform: scale(2);
-  left: -300px;
-  top: -350px;
+  left: -500px;
+  top: -700px;
   z-index: -1;
   animation: shadowPulse 2.5s infinite ease-in-out;
 }

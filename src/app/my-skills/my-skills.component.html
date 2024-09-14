@@ -4,15 +4,8 @@
       <div class="skill-row" *ngFor="let skillRow of getSkillRows(4)">
         <div class="single-skill" *ngFor="let skill of skillRow">
           <img [src]="skill.image" [alt]="skill.alt" />
-          <span [innerHTML]="skill.name"></span>
+          <span [ngClass]="skill.specialClass" [innerHTML]="skill.name"></span>
         </div>
-      </div>
-      <div class="shadow-container-skills">
-        <img
-          class="green-shadow-skills"
-          src="assets/img/green_shadow.png"
-          alt="green-shadow"
-        />
       </div>
     </div>
 
@@ -27,7 +20,10 @@
           <div class="skill-row" *ngFor="let skillRow of getSkillRows(3)">
             <div class="single-skill" *ngFor="let skill of skillRow">
               <img [src]="skill.image" [alt]="skill.alt" />
-              <span [innerHTML]="skill.name"></span>
+              <span
+                [ngClass]="skill.specialClass"
+                [innerHTML]="skill.name"
+              ></span>
             </div>
           </div>
         </div>
@@ -45,5 +41,12 @@
         </a>
       </div>
     </div>
+  </div>
+  <div class="shadow-container-skills">
+    <img
+      class="green-shadow-skills"
+      src="assets/img/green_shadow.png"
+      alt="green-shadow"
+    />
   </div>
 </div>
