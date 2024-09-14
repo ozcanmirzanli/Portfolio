@@ -11,7 +11,7 @@
   align-items: center;
   justify-content: flex-end;
   margin-top: 180px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
   flex-direction: row-reverse;
 }
 
@@ -115,6 +115,8 @@ textarea {
 }
 
 .check-box {
+  max-width: 620px;
+
   span {
     color: white;
     font-size: 14px;
@@ -186,9 +188,7 @@ textarea {
 .purple-shadow-contact {
   position: absolute;
   z-index: -1;
-  height: 100%;
-  width: 80%;
-  bottom: -500px;
+  bottom: -400px;
   left: -600px;
   animation: shadowPulse 2.5s infinite ease-in-out;
 }
@@ -250,6 +250,8 @@ textarea {
 @media (max-width: 700px) {
   .contact-title {
     margin-top: 80px;
+
+    margin-bottom: 30px;
   }
 
   .contact-container {
