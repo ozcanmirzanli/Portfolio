@@ -1,4 +1,9 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  OnInit,
+  ViewEncapsulation,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { Subscription } from 'rxjs';
@@ -9,6 +14,7 @@ import { Subscription } from 'rxjs';
   imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class PortfolioComponent implements OnInit {
   projects: any[] = [];

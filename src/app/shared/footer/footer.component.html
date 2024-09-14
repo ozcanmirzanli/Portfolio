@@ -1,4 +1,4 @@
-<div class="green-border"></div>
+<div class="green-border-footer"></div>
 
 <div class="footer-container">
   <div class="footer-content">
@@ -29,14 +29,14 @@
           style="margin-right: 0"
         />
       </a>
-      <a
-        [routerLink]="['/app-privacy-policy']"
-        href="#"
-        (click)="scrollToTop()"
-        class="legal-notice"
-      >
-        {{ "EXTRAS.LEGAL_NOTICE" | translate }}
-      </a>
     </div>
+    <a
+      [routerLink]="['/app-privacy-policy']"
+      href="#"
+      (click)="scrollToTop()"
+      class="legal-notice"
+    >
+      {{ "EXTRAS.LEGAL_NOTICE" | translate }}
+    </a>
   </div>
 </div>

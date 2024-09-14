@@ -28,6 +28,10 @@
   }
 }
 
+.header-links li:last-child a {
+  margin-right: 0; /* Remove margin-right from the last link */
+}
+
 a {
   text-decoration: none;
 }
@@ -52,7 +56,6 @@ ul {
     width: 40px;
     height: 40px;
     position: relative;
-    margin-right: 35px;
     z-index: 999;
   }
 
@@ -120,15 +123,17 @@ ul {
 
   img {
     cursor: pointer;
+
+    &:hover {
+      filter: brightness(1.8);
+    }
   }
 }
 
-.selected-flag {
-  filter: brightness(1.5);
-}
-
-.flag {
-  filter: brightness(1);
+@media (max-width: 1450px) {
+  .header-content {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -153,8 +158,11 @@ ul {
 @media (max-width: 700px) {
   .header {
     h2 {
-      margin-left: 50px;
+      margin-left: 20px;
     }
+  }
+  .burger-menu-btn {
+    margin-right: 24px;
   }
 }
 
@@ -164,13 +172,19 @@ ul {
       font-size: 38px;
     }
   }
+
+  .translation-switch {
+    img {
+      width: 40%;
+    }
+  }
 }
 
 @media (max-width: 400px) {
   .header {
     h2 {
       font-size: 34px;
-      margin-left: 40px;
+      margin-left: 10px;
     }
   }
 }

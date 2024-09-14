@@ -1,7 +1,9 @@
-.green-border {
+.green-border-footer {
   border-bottom: 4px solid var(--primary-color);
   width: 100%;
   margin-top: 245px;
+  z-index: 999;
+  position: relative;
 }
 
 .footer-container {
@@ -12,6 +14,8 @@
   background-color: var(--background-color);
   width: 100%;
   margin-top: auto;
+  z-index: 999;
+  position: relative;
 }
 
 .footer-content {
@@ -60,6 +64,12 @@ span {
   }
 }
 
+@media (max-width: 1400px) {
+  .footer-content {
+    width: 90%;
+  }
+}
+
 @media (max-width: 900px) {
   .contact-links {
     img {
@@ -84,11 +94,14 @@ span {
 
   .legal-notice {
     display: flex;
-    margin-left: 18px;
     margin-top: 15px;
   }
 
-  .green-border {
+  .green-border-footer {
     margin-top: 240px;
+  }
+
+  .contact-links {
+    margin-top: 10px;
   }
 }

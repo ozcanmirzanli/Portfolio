@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -21,6 +21,7 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class ContactComponent {
   http = inject(HttpClient);

@@ -69,38 +69,38 @@ textarea {
   border: 1px solid red;
 }
 
-h2 {
-  color: white;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 38.4px;
-  margin-bottom: 24px;
+.contact-title {
+  h2 {
+    color: white;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 38.4px;
+  }
 }
 
-h3 {
-  color: white;
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 108px;
+.contact-text {
+  h3 {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 108px;
+  }
+
+  p {
+    margin-bottom: 16px;
+  }
 }
 
-p {
-  margin-bottom: 16px;
-}
-
-a {
-  text-decoration: none;
+.check-box {
+  a {
+    text-decoration: none;
+  }
 }
 
 .button-container {
   width: 100%;
   display: flex;
   justify-content: center;
-}
-
-.designed-btn {
-  background-color: #b6b6b6;
-  cursor: not-allowed;
 }
 
 .gray-btn {
@@ -113,11 +113,13 @@ a {
   cursor: pointer;
 }
 
-span {
-  color: white;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16.8px;
+.check-box {
+  span {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+  }
 }
 
 .purple {
@@ -191,17 +193,8 @@ span {
 }
 
 @media (max-width: 1200px) {
-  input,
-  textarea {
-    width: 90%;
-  }
-
   .purple-border-big {
     width: 40%;
-  }
-
-  .contact-text {
-    margin-left: 5%;
   }
 
   .go-up-btn {
@@ -218,8 +211,7 @@ span {
   input,
   textarea {
     margin: 0 auto;
-    margin-bottom: 5% !important;
-    width: 80%;
+    margin-bottom: 8% !important;
   }
 
   .purple-border-big {
@@ -227,12 +219,30 @@ span {
   }
 
   .contact-text {
-    margin-right: 5%;
+    width: 70%;
+
+    p,
+    h3 {
+      text-align: center;
+    }
+
+    h3 {
+      margin: 0 auto;
+    }
   }
 
   .required-container {
     bottom: 20px;
     left: 45px;
+  }
+}
+
+@media (max-width: 750px) {
+  html.lang-de .contact-text {
+    h3 {
+      font-size: 25px;
+      line-height: 83px;
+    }
   }
 }
 
@@ -247,6 +257,17 @@ span {
 }
 
 @media (max-width: 600px) {
+  html.lang-de .contact-text h3 {
+    font-size: 25px;
+    line-height: 39px;
+    margin-bottom: 20px;
+  }
+
+  input,
+  textarea {
+    width: 90%;
+  }
+
   .purple-border-big {
     width: 20%;
     margin-right: 25px;
@@ -276,10 +297,34 @@ span {
   }
 }
 
+@media (max-width: 500px) {
+  .contact-title {
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  .contact-text {
+    h3 {
+      font-size: 25px;
+      line-height: 80px;
+    }
+  }
+}
+
 @media (max-width: 400px) {
-  h3 {
-    font-size: 23px;
-    margin-bottom: 10px;
+  .contact-container {
+    margin-top: 20px;
+  }
+
+  .contact-text {
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 15px;
+    }
   }
 
   .purple-border-big {

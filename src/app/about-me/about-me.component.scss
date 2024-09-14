@@ -14,6 +14,10 @@
   position: relative;
   max-width: 471px;
 
+  p {
+    text-align: left !important;
+  }
+
   h2 {
     margin-bottom: 41px;
   }
@@ -29,6 +33,11 @@
   display: flex;
   align-items: center;
   margin-bottom: 24px;
+
+  p {
+    margin-left: 0 !important;
+    text-align: left !important;
+  }
 
   img {
     margin-right: 32px;
@@ -62,7 +71,7 @@
   }
 }
 
-.shadow-container {
+.shadow-container-about {
   position: absolute;
   top: -200px;
   right: 0;
@@ -78,12 +87,16 @@
   top: 0px;
 }
 
-.green-border {
+.green-border-about {
   border-bottom: 4px solid #70e61c;
   width: 267px;
 }
 
 @media (max-width: 1440px) {
+  .about-me-text {
+    margin-left: 73px;
+  }
+
   .about-me-photo {
     img {
       width: 400px;
@@ -91,8 +104,12 @@
     }
   }
 
-  .green-border {
+  .green-border-about {
     width: 200px;
+  }
+
+  .shadow-container {
+    overflow-x: hidden;
   }
 }
 
@@ -104,49 +121,74 @@
     }
   }
 
-  .green-border {
+  .green-border-about {
     width: 150px;
   }
 }
 
 @media (max-width: 1145px) {
   .about-me-photo,
-  .green-border {
+  .green-border-about {
     display: none;
   }
 
   .about-me {
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-me-text {
-    margin-left: 0;
+    margin: 0 auto !important;
+    position: relative;
+    max-width: 1440px;
+    width: 90%;
+    text-align: center;
   }
 
   .about-me-container {
     padding-top: 125px;
   }
+
+  .about-me-container {
+    width: 80%;
+  }
 }
 
 @media (max-width: 700px) {
-  .about-me-text {
-    h2 {
-      margin-bottom: 32px;
-    }
+  .about-me-text p {
+    text-align: center !important;
   }
 
-  .about-me-container {
-    padding-top: 100px;
+  .about-me-details p {
+    text-align: left !important;
   }
 
-  .about-me-text {
-    margin-left: 5%;
-    margin-right: 5%;
+  .about-me-text h2 {
+    font-size: 50px;
   }
 }
 
 @media (max-width: 550px) {
   .about-me-container {
     padding-top: 50px;
+  }
+
+  .shadow-container-about {
+    top: 10%;
+  }
+
+  .about-me-text h2 {
+    margin-bottom: 0;
+    font-size: 42px;
+  }
+
+  .about-me-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-me-single img {
+    margin-right: 15px;
   }
 }

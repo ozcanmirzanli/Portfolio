@@ -96,4 +96,14 @@ app-porfolio {
   h1 {
     font-size: 45px;
   }
+
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  h2 {
+    font-size: 50px;
+  }
 }

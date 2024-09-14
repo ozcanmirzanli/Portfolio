@@ -1,4 +1,4 @@
-import { Component, HostListener, inject } from '@angular/core';
+import { Component, HostListener, inject, Renderer2 } from '@angular/core';
 import { RouterOutlet, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MainContentComponent } from './main-content/main-content.component';
@@ -33,16 +33,28 @@ export class AppComponent {
 
   languages = ['en', 'de'];
   public translateService = inject(TranslateService);
+  private renderer = inject(Renderer2);
 
   ngOnInit(): void {
     const defaultLang = localStorage.getItem('language') || 'en';
     this.translateService.setDefaultLang(defaultLang);
     this.translateService.use(defaultLang);
+    this.updateLangClass(defaultLang);
   }
 
   changeLanguage(lang: string) {
     this.translateService.use(lang);
     localStorage.setItem('language', lang);
+    this.updateLangClass(lang);
+  }
+
+  updateLangClass(lang: string) {
+    const htmlTag = document.querySelector('html');
+    if (htmlTag) {
+      this.renderer.removeClass(htmlTag, 'lang-en');
+      this.renderer.removeClass(htmlTag, 'lang-de');
+      this.renderer.addClass(htmlTag, `lang-${lang}`);
+    }
   }
 
   // Method to get image source based on language code

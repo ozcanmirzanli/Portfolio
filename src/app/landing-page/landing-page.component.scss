@@ -5,15 +5,18 @@
   width: 100%;
 }
 
-.shadow-container {
+.shadow-container-landing {
   position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 5%;
 }
 
 .profile-shadow {
   position: absolute;
   animation: shadowPulse 2.5s infinite ease-in-out;
   transform-origin: center;
-  left: -5%;
 }
 
 .profile-picture {
@@ -147,6 +150,7 @@
   position: absolute;
   top: 15%;
   left: 176px;
+  overflow: hidden;
 }
 
 .scroll-text {
@@ -155,6 +159,26 @@
   animation: scrollTextAnimation 1.5s infinite ease-in-out;
 }
 
+// STYLE CHANGES FOR GERMAN LANGUAGE
+html.lang-de .title h1 {
+  font-size: 79px !important;
+}
+
+html.lang-de .title-container h2 {
+  font-size: 52px !important;
+}
+
+html.lang-de .title-container h3 {
+  font-size: 46px;
+  margin-top: 47px;
+  margin-right: -35px;
+}
+
+html.lang-de .green-btn {
+  font-size: 20px !important;
+}
+
+// ANIMATIONS
 @keyframes scrollTextAnimation {
   0%,
   100% {
@@ -165,6 +189,7 @@
   }
 }
 
+// MEDIA QUERIES
 @media (max-width: 1440px) {
   .title-container {
     right: 25px;
@@ -183,33 +208,41 @@
     }
   }
 
+  html.lang-de .title-container h1 {
+    font-size: 65px !important;
+  }
+
+  html.lang-de .title-container h2 {
+    font-size: 43px !important;
+  }
+
+  html.lang-de .title-container h3 {
+    font-size: 35px;
+    margin-top: 25px;
+  }
+
   .photo-big {
     width: 472px;
     height: auto;
     left: 12%;
   }
 
-  .profile-shadow {
-    left: -8%;
-    position: relative;
-  }
-
   .profile-picture {
     width: 50%;
+  }
+
+  .shadow-container-landing {
+    right: 5%;
   }
 }
 
 @media (max-width: 1200px) {
-  .photo-big {
-    left: 5%;
-  }
-
-  .profile-shadow {
-    left: -20%;
-  }
-
   .profile-picture {
     width: 45%;
+  }
+
+  .shadow-container-landing {
+    right: 10%;
   }
 
   .green-btn {
@@ -218,6 +251,10 @@
 }
 
 @media (max-width: 1100px) {
+  html.lang-de .title-container {
+    right: 0px !important;
+  }
+
   .title-container {
     z-index: 9;
     right: 0;
@@ -238,9 +275,18 @@
     justify-content: center;
   }
 
-  .profile-shadow,
   .photo-big {
     left: unset;
+  }
+
+  .shadow-container-landing {
+    right: unset;
+    top: 5%;
+  }
+
+  .profile-shadow {
+    width: 100%;
+    height: auto;
   }
 
   .scroll-text {
@@ -251,10 +297,6 @@
     span {
       display: none;
     }
-  }
-
-  .shadow-container {
-    margin-top: 15%;
   }
 
   .about-me-text {
@@ -276,11 +318,17 @@
   .photo-big {
     width: 430px;
   }
+
+  .center-btn {
+    .green-btn {
+      margin-top: 10px;
+    }
+  }
 }
 
 @media (min-width: 1024px) and (max-width: 1024px) {
   /* iPad Portrait */
-  .shadow-container {
+  .shadow-container-landing {
     margin-top: -25% !important;
   }
 
@@ -290,6 +338,16 @@
 }
 
 @media (max-width: 700px) {
+  html.lang-de .title-container h3 {
+    font-size: 30px;
+    margin-top: 14px;
+    margin-right: -28px;
+  }
+
+  html.lang-de .title-container {
+    right: 2% !important;
+  }
+
   .title-container {
     right: 10px;
 
@@ -310,7 +368,7 @@
     }
   }
 
-  .shadow-container {
+  .shadow-container-landing {
     margin-top: 25%;
   }
 
@@ -342,7 +400,32 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  html.lang-de .title-container h1 {
+    font-size: 55px !important;
+  }
+
+  html.lang-de .title-container h2 {
+    font-size: 36px !important;
+  }
+}
+
+@media (max-width: 505px) {
+  html.lang-de .title-container h1 {
+    font-size: 44px !important;
+  }
+  html.lang-de .title-container h2 {
+    font-size: 29px !important;
+  }
+
+  html.lang-de .title-container h3 {
+    font-size: 23px;
+  }
+
+  html.lang-de .title-container h3 {
+    margin-right: -24px;
+  }
+
   .title-container {
     bottom: 15%;
 
@@ -381,9 +464,33 @@
   .purple-border {
     width: 80px;
   }
+
+  html.lang-de .green-btn {
+    margin-right: 0 !important;
+  }
 }
 
 @media (max-width: 400px) {
+  html.lang-de .title-container h1 {
+    font-size: 37px !important;
+  }
+
+  html.lang-de .title-container h2 {
+    font-size: 24px !important;
+  }
+
+  html.lang-de .title-container h3 {
+    font-size: 22px !important;
+  }
+
+  html.lang-de .title-container {
+    right: 3% !important;
+  }
+
+  html.lang-de .green-btn {
+    font-size: 18px !important;
+  }
+
   .title-container {
     h1 {
       font-size: 31px;
@@ -410,5 +517,21 @@
 @media (max-width: 380px) {
   .background {
     top: 40%;
+  }
+}
+
+@media (max-width: 350px) {
+  html.lang-de .title-container h1 {
+    font-size: 30px !important;
+    line-height: 35px;
+  }
+
+  html.lang-de .title-container h2 {
+    font-size: 20px !important;
+  }
+
+  html.lang-de .title-container h3 {
+    font-size: 19px !important;
+    margin-right: -20px;
   }
 }

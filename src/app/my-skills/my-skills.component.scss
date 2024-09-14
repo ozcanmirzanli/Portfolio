@@ -41,7 +41,7 @@
   }
 }
 
-.green-btn {
+.green-btn-skills {
   background-color: var(--primary-color);
 
   &:hover {
@@ -102,11 +102,10 @@ h3 {
   margin-bottom: 30px;
 }
 
-.purple-border {
+.purple-border-skills {
   width: 100px;
   border-bottom: 4px solid #9747ff;
   border-radius: 10px;
-  margin-left: 32px;
 }
 
 .green-btn {
@@ -118,12 +117,12 @@ h3 {
   }
 }
 
-.shadow-container {
+.shadow-container-skills {
   position: relative;
   animation: shadowPulse 2.5s infinite ease-in-out;
 }
 
-.green-shadow {
+.green-shadow-skills {
   position: absolute;
   left: -685px;
   top: -275px;
@@ -131,6 +130,21 @@ h3 {
 
 .my-skills-logos.mobile {
   display: none;
+}
+
+html.lang-de .my-skills-text {
+  h3,
+  p {
+    text-align: center;
+  }
+}
+
+html.lang-de .my-skills-title {
+  h2 {
+    font-size: 60px;
+    line-height: 78px;
+    text-align: center;
+  }
 }
 
 @keyframes up-and-down {
@@ -174,6 +188,7 @@ h3 {
 
   .my-skills-info {
     margin-right: 0;
+    align-items: center;
   }
 
   .my-skills-container {
@@ -183,15 +198,28 @@ h3 {
   .skill-row {
     justify-content: space-around;
   }
+
+  .green-btn-skills {
+    margin-top: 35px !important;
+    margin-right: 0 !important;
+  }
 }
 
 @media (max-width: 700px) {
+  html.lang-de .my-skills-title h2 {
+    line-height: 60px;
+    margin-bottom: 15px;
+  }
+
+  .purple-border-skills {
+    position: relative !important;
+  }
+
   .my-skills-container {
     padding-top: 100px;
   }
 
-  .purple-border {
-    margin-left: 10px;
+  .purple-border-skills {
     width: 60px;
   }
 
@@ -205,7 +233,7 @@ h3 {
     width: 90%;
   }
 
-  .green-btn {
+  .green-btn-skills {
     font-size: 16px;
     line-height: 19.2px;
   }
@@ -237,6 +265,20 @@ h3 {
   .my-skills-container {
     padding-top: 50px;
   }
+
+  .my-skills-title {
+    margin-bottom: 0;
+  }
+
+  .my-skills-text {
+    h2 {
+      font-size: 45px !important;
+    }
+  }
+
+  html.lang-de .green-btn-skills {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -249,5 +291,15 @@ h3 {
       font-size: 21px;
       margin: 0 auto;
     }
+  }
+  .my-skills-text {
+    h2 {
+      font-size: 37px !important;
+    }
+  }
+
+  html.lang-de .my-skills-text h3 {
+    margin-bottom: 16px;
+    line-height: 23px;
   }
 }

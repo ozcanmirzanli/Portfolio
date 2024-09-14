@@ -4,6 +4,7 @@ import {
   Input,
   Output,
   SimpleChanges,
+  ViewEncapsulation,
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -13,6 +14,7 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   templateUrl: './burger-menu.component.html',
   styleUrl: './burger-menu.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class BurgerMenuComponent {
   @Input() isMenuOpen: boolean = false; // Input from parent component

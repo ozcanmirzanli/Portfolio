@@ -26,8 +26,10 @@
   margin-left: 32px;
 }
 
-p {
-  text-align: center;
+.portfolio-container {
+  p {
+    text-align: center;
+  }
 }
 
 .project-section {
@@ -47,8 +49,10 @@ p {
   opacity: 0; /* Start with the element invisible */
   transition: opacity 0.5s ease-out;
 
-  p {
-    text-align: left;
+  .portfolio-container {
+    p {
+      text-align: left;
+    }
   }
 }
 
@@ -70,38 +74,38 @@ p {
   animation: slide-in-left 0.5s ease-out forwards;
 }
 
-h3 {
-  color: var(--secondary-color);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 38.4px;
-  text-align: left;
-}
-
-h4 {
-  color: var(--primary-color);
-  font-size: 23px;
-  font-weight: 400;
-  line-height: 27.6px;
-  text-align: left;
-}
-
 .project-text {
   gap: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 513px;
+
+  h3 {
+    color: var(--secondary-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+    text-align: left;
+  }
+
+  h4 {
+    color: var(--primary-color);
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 27.6px;
+    text-align: left;
+  }
 }
 
 .flex-end {
   align-items: flex-end;
 }
 
-.purple-btn {
-  background-color: var(--secondary-color);
-  margin-top: 30px;
-  margin-right: 86px;
+.purple-btn-portfolio {
+  background-color: var(--secondary-color) !important;
+  margin-top: 30px !important;
+  margin-right: 86px !important;
 
   &:hover {
     background-color: var(--primary-color);
@@ -113,17 +117,17 @@ h4 {
 }
 
 .empty-green-btn {
-  background-color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  margin-top: 30px;
-  margin-right: 0;
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  margin-top: 30px !important;
+  margin-right: 0 !important;
 
   &:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
   }
 
   &:active {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
   }
 }
 
@@ -217,8 +221,10 @@ h4 {
     align-items: center;
   }
 
-  p {
-    text-align: center;
+  .portfolio-container {
+    p {
+      text-align: center;
+    }
   }
 
   .project-img {
@@ -237,14 +243,16 @@ h4 {
 }
 
 @media (max-width: 700px) {
-  .last-purple-btn {
-    border: 1.5px solid var(--primary-color);
-    border-radius: 10px;
+  .last-purple-btn-portfolio {
+    border: 1.5px solid var(--primary-color) !important;
+    border-radius: 10px !important;
   }
 
-  p {
-    width: 90%;
-    margin-left: 5%;
+  .portfolio-container {
+    p {
+      width: 90%;
+      margin-left: 5%;
+    }
   }
 
   .purple-border {
@@ -267,20 +275,26 @@ h4 {
     height: 552.99px;
     margin-bottom: 100px;
 
-    p {
-      text-align: center;
+    .portfolio-container {
+      p {
+        text-align: center;
+      }
     }
 
     img {
       width: 342px;
     }
 
-    .purple-btn {
-      margin-right: 50px;
+    .purple-btn-portfolio {
+      margin-right: 50px !important;
     }
 
     .project-text {
       width: inherit;
+
+      h3 {
+        margin-top: 0;
+      }
     }
   }
 
@@ -295,25 +309,32 @@ h4 {
 
 @media (max-width: 550px) {
   .portfolio-title {
-    margin-top: 100px;
+    margin-top: 120px;
+  }
+
+  html.lang-de .portfolio-title {
+    margin-top: 200px;
   }
 }
 
 @media (max-width: 400px) {
   .designed-btn {
-    font-size: 16px;
-    line-height: 19.6px;
+    font-size: 16px !important;
+    line-height: 19.6px !important;
   }
 
   .single-project {
     margin-bottom: 80px;
 
-    .purple-btn {
-      margin-right: 30px;
+    .purple-btn-portfolio {
+      margin-right: 30px !important;
     }
 
-    p {
-      width: 75%;
+    .portfolio-container {
+      p {
+        width: 75%;
+        font-size: 15px;
+      }
     }
 
     img {
@@ -321,11 +342,16 @@ h4 {
     }
   }
 
-  h3 {
-    font-size: 20px;
+  .portfolio-title {
+    h2 {
+      font-size: 40px;
+    }
   }
 
-  h2 {
-    font-size: 40px;
+  .project-text {
+    h4 {
+      font-size: 20px;
+      line-height: 15.6px;
+    }
   }
 }
