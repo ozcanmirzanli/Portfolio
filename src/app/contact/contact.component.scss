@@ -122,8 +122,10 @@ textarea {
   }
 }
 
-.purple {
-  color: var(--secondary-color);
+.check-box {
+  .purple {
+    color: var(--secondary-color);
+  }
 }
 
 .privacy-policy {
