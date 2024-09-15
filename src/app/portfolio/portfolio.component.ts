@@ -88,11 +88,6 @@ export class PortfolioComponent implements OnInit {
       });
   }
 
-  isLastButton(project: any): boolean {
-    const lastProject = this.projects[this.projects.length - 1];
-    return project === lastProject;
-  }
-
   /**
    * Detects the scroll event and triggers animations for project elements.
    * When the user scrolls the page, this function checks the position
