@@ -111,11 +111,11 @@
   margin-right: 86px !important;
 
   &:hover {
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
   }
 
   &:active {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
   }
 }
 
