@@ -17,11 +17,11 @@
   "ABOUT_ME": {
     "TITLE": "Über mich"
   },
-  "ABOUT_ME_TEXT": "Hallo, ich bin ein leidenschaftlicher Frontend-Entwickler aus Berlin. Ich freue mich darauf, komplexe Ideen in intuitive und visuell ansprechende Benutzererfahrungen zu verwandeln. Wie Edsger Dijkstra weise sagte: „Die Kunst des Programmierens ist die Kunst, Komplexität zu organisieren, Vielfalt zu meistern und Chaos zu vermeiden.“ Diese Philosophie treibt mich dazu an, in meiner Arbeit exzellent zu sein.",
+  "ABOUT_ME_TEXT": "Hi, ich bin ein Frontend-Entwickler aus Berlin. Ich mag es, komplexe Ideen in benutzerfreundliche und visuell ansprechende Websiten zu verwandeln. Edsger Dijkstra sagte einmal: „Die Kunst des Programmierens ist die Kunst, Komplexität zu organisieren, Vielfalt zu meistern und Chaos zu vermeiden.“ Das passt gut zu meiner Herangehensweise an die Arbeit.",
   "ABOUT_ME_DETAILS": {
-    "LOCATION": "Ich bin anpassungsfähig an verschiedene Arbeitsumgebungen und bereit, bei Bedarf umzuziehen. Ich bevorzuge hybride Arbeitsweise, bin aber auch offen für Vor-Ort- oder Remote-Arrangements.",
-    "PROBLEM_SOLVER": "Ich bin ein engagierter Problemlöser, der es genießt, Herausforderungen direkt anzugehen. Ich freue mich darauf, komplexe Herausforderungen zu analysieren, in handhabbare Teile zu zerlegen und elegante Lösungen zu entwickeln. Ob bei der Fehlersuche, der Leistungsoptimierung oder der Verfeinerung der Benutzerinteraktionen, ich bin bestrebt, effektive, innovative Antworten zu finden.",
-    "CREATIVITY": "Meine Kreativität kommt zum Vorschein, wenn ich Figma-Designs in funktionale, benutzerfreundliche Websites mit innovativen Funktionen umsetze. Ob bei der Erstellung responsiver Layouts oder der Implementierung ansprechender interaktiver Elemente, ich lege großen Wert darauf, jedes Projekt zu einem einzigartigen digitalen Erlebnis zu machen."
+    "LOCATION": "Ich bin flexibel, was Arbeitsumgebungen angeht, und offen für einen Umzug, wenn nötig. Obwohl ich hybrides Arbeiten bevorzuge, bin ich auch mit Vor-Ort- oder Remote-Arbeit einverstanden.",
+    "PROBLEM_SOLVER": "Ich liebe es, Probleme zu lösen und Herausforderungen anzugehen. Ob es darum geht, Bugs zu beheben, die Leistung zu optimieren oder Benutzerinteraktionen zu verbessern – ich konzentriere mich darauf, schwierige Aufgaben in handhabbare Teile zu zerlegen und praktische Lösungen zu finden, die funktionieren.",
+    "CREATIVITY": "Ich genieße es, Figma-Designs zum Leben zu erwecken und sie in funktionale Websites mit besonderen Features zu verwandeln. Ob responsive Layouts oder interaktive Elemente – ich lege Wert darauf, jedes Projekt etwas anders zu gestalten und ein Nutzererlebnis zu schaffen, das Spaß macht."
   },
 
   "MY_SKILLS": {
