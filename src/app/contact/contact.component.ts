@@ -1,4 +1,10 @@
-import { Component, inject, ViewEncapsulation } from '@angular/core';
+import { AnimationService } from './../animation.service';
+import {
+  Component,
+  HostListener,
+  inject,
+  ViewEncapsulation,
+} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -24,6 +30,8 @@ import { TranslateModule } from '@ngx-translate/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class ContactComponent {
+  constructor(private animationService: AnimationService) {}
+
   http = inject(HttpClient);
 
   contactData = {
@@ -96,5 +104,15 @@ export class ContactComponent {
    */
   scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Scroll event listener
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const contactText = document.querySelector('.contact-text');
+    const inputSection = document.querySelector('.input-section');
+
+    this.animationService.handleElementAnimation(contactText, 100);
+    this.animationService.handleElementAnimation(inputSection, 100);
   }
 }
