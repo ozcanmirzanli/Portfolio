@@ -15,7 +15,7 @@
 
 .profile-shadow {
   position: absolute;
-  animation: shadowPulse 2.5s infinite ease-in-out;
+  animation: shadowPulse 1.75s infinite ease-in-out;
   transform-origin: center;
 }
 
@@ -54,8 +54,15 @@
     font-size: 58px;
     font-weight: 400;
     line-height: 69.6px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
   }
 }
+
+
+
 
 .profile-container {
   display: flex;
@@ -156,7 +163,7 @@
 .scroll-text {
   transform: rotate(90deg);
   width: 200px;
-  animation: scrollTextAnimation 1.5s infinite ease-in-out;
+  animation: scrollTextAnimation 1s infinite ease-in-out;
 }
 
 // STYLE CHANGES FOR GERMAN LANGUAGE

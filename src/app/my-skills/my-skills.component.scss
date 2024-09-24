@@ -22,6 +22,10 @@
   margin: 0 auto;
 }
 
+.my-skills-logos.animate {
+  animation: half-slide-in-left 1s ease-out forwards;
+}
+
 .skill-row {
   display: flex;
   flex-direction: row;
@@ -90,6 +94,10 @@ h3 {
 .my-skills-text {
   width: 571px;
   height: 400px;
+}
+
+.my-skills-text.animate {
+  animation: half-slide-in-right 1s ease-out forwards;
 }
 
 .my-skills-info {

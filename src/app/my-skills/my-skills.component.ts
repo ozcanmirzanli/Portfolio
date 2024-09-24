@@ -1,4 +1,5 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { AnimationService } from './../animation.service';
+import { Component, HostListener, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 /**
@@ -14,6 +15,8 @@ import { TranslateModule } from '@ngx-translate/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class MySkillsComponent {
+  constructor(private animationService: AnimationService) {}
+
   skills = [
     { name: 'HTML', image: 'assets/img/html.png', alt: 'html' },
     { name: 'CSS', image: 'assets/img/css.png', alt: 'css' },
@@ -58,5 +61,15 @@ export class MySkillsComponent {
       rows.push(this.skills.slice(i, i + rowSize));
     }
     return rows;
+  }
+
+  // Scroll event listener
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const mySkillsLogos = document.querySelector('.my-skills-logos');
+    const mySkillsText = document.querySelector('.my-skills-text');
+
+    this.animationService.handleElementAnimation(mySkillsLogos, 100);
+    this.animationService.handleElementAnimation(mySkillsText, 100);
   }
 }

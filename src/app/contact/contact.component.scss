@@ -31,9 +31,17 @@
   width: 474px;
 }
 
+.contact-text.animate {
+  animation: half-slide-in-left 1s ease-out forwards;
+}
+
 .input-section {
   display: flex;
   flex-direction: column;
+}
+
+.input-section.animate {
+  animation: half-slide-in-right 1s ease-out forwards;
 }
 
 input,
@@ -190,7 +198,7 @@ textarea {
   z-index: -1;
   bottom: -400px;
   left: -600px;
-  animation: shadowPulse 2.5s infinite ease-in-out;
+  animation: shadowPulse 2s infinite ease-in-out;
 }
 
 @media (max-width: 1200px) {
